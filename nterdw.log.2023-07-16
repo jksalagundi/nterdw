@@ -1,0 +1,460 @@
+DEBUG 16/July/2023 16:19:30 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 16:19:31 load_order_events_api:	 Processing Data for plano on 2023-07-16 16:19:31.516802. Count : 20
+DEBUG 16/July/2023 16:19:50 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 16:19:50 load_order_events_api:	 Processing Data for mckinney on 2023-07-16 16:19:50.898590. Count : 19
+DEBUG 16/July/2023 16:20:07 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 16:20:08 load_order_events_api:	 Processing Data for mckinney on 2023-07-16 16:20:08.174981. Count : 19
+DEBUG 16/July/2023 16:22:05 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 16:22:06 load_order_events_api:	 Processing Data for mckinney on 2023-07-16 16:22:06.361023. Count : 19
+DEBUG 16/July/2023 16:22:06 data_upsert:	 64b41518a0030a43c25c7887 is created
+DEBUG 16/July/2023 16:23:58 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 16:23:59 load_order_events_api:	 Processing Data for mckinney on 2023-07-16 16:23:59.069166. Count : 19
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b41518a0030a43c25c7887 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b40ff902f6cf5e743be3c6 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b40e9734e18512351f5b71 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b3664327613370e5111b64 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b3645474b4f610803ff4c0 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b32d4673add9279d0b34cf is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b327ae226c5439467fc25b is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b305d5d9125c1d7b7933c7 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2f8a2ab7fcd30a71fbc01 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2e5a61eafbc56bc782a22 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2dbc13d8e78052c21be2c is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2d1665047670d5c3f0726 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2d12df1f2177b035b17a7 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2c4ccf7f6670c3d0f94c1 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2c4b172ec3414bd13887c is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2c1c5d706437fb6766828 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2b19c8055496df128ee07 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b2119e940560296f5e7477 is created
+DEBUG 16/July/2023 16:23:59 data_upsert:	 64b20fc21c792950a3517f31 is updated on 2023-07-16 16:23:59.131266
+DEBUG 16/July/2023 16:24:39 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 16:24:40 load_order_events_api:	 Processing Data for plano on 2023-07-16 16:24:40.120759. Count : 20
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b418e632228a4b1d6125ad is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b35a0578f452609900668e is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b33a088087f910725b5725 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b320567bec69038a6c5fa7 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b301a91d94b5620617dc85 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2f393671b5a509f2d4733 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2dbf0675e873ccb33bf72 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2d8b2d1aa4344b329c435 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2c3d7e2972708de0b84f8 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2c02328b77c78ba43ba41 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2be2457d5810875672a8d is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2b635135a606c812398e7 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2b60f8c527002ca47ec11 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2aebccbb04d4bb33ee3d4 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b2207d2209b24ead17bae3 is created
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b1f36d85ea466e9611ada5 is updated on 2023-07-16 16:24:40.224786
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b1d46f5378be43db5bd993 is updated on 2023-07-16 16:24:40.227575
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b1d4144dec1c35bd6e36a3 is updated on 2023-07-16 16:24:40.229893
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b1cc27a64c234f8930195b is updated on 2023-07-16 16:24:40.231944
+DEBUG 16/July/2023 16:24:40 data_upsert:	 64b1c99c495f861c3c6b82ba is updated on 2023-07-16 16:24:40.234199
+DEBUG 16/July/2023 16:25:26 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 16:25:27 load_order_events_api:	 Processing Data for plano on 2023-07-16 16:25:27.264610. Count : 20
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b418e632228a4b1d6125ad is updated on 2023-07-16 16:25:27.314173
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b35a0578f452609900668e is updated on 2023-07-16 16:25:27.318138
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b33a088087f910725b5725 is updated on 2023-07-16 16:25:27.320820
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b320567bec69038a6c5fa7 is updated on 2023-07-16 16:25:27.323292
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b301a91d94b5620617dc85 is updated on 2023-07-16 16:25:27.325849
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2f393671b5a509f2d4733 is updated on 2023-07-16 16:25:27.328545
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2dbf0675e873ccb33bf72 is updated on 2023-07-16 16:25:27.330477
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2d8b2d1aa4344b329c435 is updated on 2023-07-16 16:25:27.332392
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2c3d7e2972708de0b84f8 is updated on 2023-07-16 16:25:27.334894
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2c02328b77c78ba43ba41 is updated on 2023-07-16 16:25:27.337228
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2be2457d5810875672a8d is updated on 2023-07-16 16:25:27.339364
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2b635135a606c812398e7 is updated on 2023-07-16 16:25:27.341798
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2b60f8c527002ca47ec11 is updated on 2023-07-16 16:25:27.344434
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2aebccbb04d4bb33ee3d4 is updated on 2023-07-16 16:25:27.346679
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b2207d2209b24ead17bae3 is updated on 2023-07-16 16:25:27.348646
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b1f36d85ea466e9611ada5 is updated on 2023-07-16 16:25:27.350630
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b1d46f5378be43db5bd993 is updated on 2023-07-16 16:25:27.352601
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b1d4144dec1c35bd6e36a3 is updated on 2023-07-16 16:25:27.354500
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b1cc27a64c234f8930195b is updated on 2023-07-16 16:25:27.356488
+DEBUG 16/July/2023 16:25:27 data_upsert:	 64b1c99c495f861c3c6b82ba is updated on 2023-07-16 16:25:27.357840
+DEBUG 16/July/2023 17:16:27 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 17:16:28 load_order_events_api:	 Processing Data for plano on 2023-07-16 17:16:28.034896. Count : 20
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b41a4a503568313f464247 is created
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b418e632228a4b1d6125ad is updated on 2023-07-16 17:16:28.105227
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b35a0578f452609900668e is updated on 2023-07-16 17:16:28.108369
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b33a088087f910725b5725 is updated on 2023-07-16 17:16:28.111213
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b320567bec69038a6c5fa7 is updated on 2023-07-16 17:16:28.113403
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b301a91d94b5620617dc85 is updated on 2023-07-16 17:16:28.115324
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2f393671b5a509f2d4733 is updated on 2023-07-16 17:16:28.117740
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2dbf0675e873ccb33bf72 is updated on 2023-07-16 17:16:28.119705
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2d8b2d1aa4344b329c435 is updated on 2023-07-16 17:16:28.121464
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2c3d7e2972708de0b84f8 is updated on 2023-07-16 17:16:28.123123
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2c02328b77c78ba43ba41 is updated on 2023-07-16 17:16:28.124909
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2be2457d5810875672a8d is updated on 2023-07-16 17:16:28.126950
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2b635135a606c812398e7 is updated on 2023-07-16 17:16:28.128745
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2b60f8c527002ca47ec11 is updated on 2023-07-16 17:16:28.130504
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2aebccbb04d4bb33ee3d4 is updated on 2023-07-16 17:16:28.132281
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b2207d2209b24ead17bae3 is updated on 2023-07-16 17:16:28.134252
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b1f36d85ea466e9611ada5 is updated on 2023-07-16 17:16:28.135991
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b1d46f5378be43db5bd993 is updated on 2023-07-16 17:16:28.137596
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b1d4144dec1c35bd6e36a3 is updated on 2023-07-16 17:16:28.139176
+DEBUG 16/July/2023 17:16:28 data_upsert:	 64b1cc27a64c234f8930195b is updated on 2023-07-16 17:16:28.141029
+DEBUG 16/July/2023 17:21:43 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 17:21:44 load_order_events_api:	 Processing Data for plano on 2023-07-16 17:21:44.528388. Count : 20
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b41a4a503568313f464247 with arrival 2023-07-16T13:30:00-05:00 is updated on 2023-07-16 17:21:44.599880
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b418e632228a4b1d6125ad with arrival 2023-08-02T18:30:00-05:00 is updated on 2023-07-16 17:21:44.606440
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b35a0578f452609900668e with arrival 2023-07-30T11:00:00-05:00 is updated on 2023-07-16 17:21:44.610339
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b33a088087f910725b5725 with arrival 2023-07-15T21:20:00-05:00 is updated on 2023-07-16 17:21:44.614200
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b320567bec69038a6c5fa7 with arrival 2023-10-13T09:45:00-05:00 is updated on 2023-07-16 17:21:44.617024
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b301a91d94b5620617dc85 with arrival 2023-07-16T16:35:00-05:00 is updated on 2023-07-16 17:21:44.618983
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2f393671b5a509f2d4733 with arrival 2023-07-17T19:45:00-05:00 is updated on 2023-07-16 17:21:44.620857
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2dbf0675e873ccb33bf72 with arrival 2023-08-12T16:05:00-05:00 is updated on 2023-07-16 17:21:44.623725
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2d8b2d1aa4344b329c435 with arrival 2023-07-15T21:50:00-05:00 is updated on 2023-07-16 17:21:44.626554
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2c3d7e2972708de0b84f8 with arrival 2023-07-15T21:30:00-05:00 is updated on 2023-07-16 17:21:44.629088
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2c02328b77c78ba43ba41 with arrival 2023-07-15T14:50:00-05:00 is updated on 2023-07-16 17:21:44.631585
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2be2457d5810875672a8d with arrival 2023-07-16T14:40:00-05:00 is updated on 2023-07-16 17:21:44.633958
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2b635135a606c812398e7 with arrival 2023-07-15T12:30:00-05:00 is updated on 2023-07-16 17:21:44.636283
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2b60f8c527002ca47ec11 with arrival 2023-07-15T16:05:00-05:00 is updated on 2023-07-16 17:21:44.638438
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2aebccbb04d4bb33ee3d4 with arrival 2023-07-15T14:15:00-05:00 is updated on 2023-07-16 17:21:44.640188
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b2207d2209b24ead17bae3 with arrival 2023-07-16T14:30:00-05:00 is updated on 2023-07-16 17:21:44.642119
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b1f36d85ea466e9611ada5 with arrival 2023-07-18T16:15:00-05:00 is updated on 2023-07-16 17:21:44.643987
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b1d46f5378be43db5bd993 with arrival 2023-07-16T18:00:00-05:00 is updated on 2023-07-16 17:21:44.645946
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b1d4144dec1c35bd6e36a3 with arrival 2023-07-14T19:55:00-05:00 is updated on 2023-07-16 17:21:44.647818
+DEBUG 16/July/2023 17:21:44 data_upsert:	 64b1cc27a64c234f8930195b with arrival 2023-07-15T14:40:00-05:00 is updated on 2023-07-16 17:21:44.649590
+DEBUG 16/July/2023 19:29:09 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 19:29:10 load_order_events_api:	 Processing Data for plano on 2023-07-16 19:29:10.299589. Count : 20
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b439e8310d7364f05a3fe7 with arrival 2023-07-17T09:25:00-05:00is created
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b41a4a503568313f464247 with arrival 2023-07-16T13:30:00-05:00 is updated on 2023-07-16 19:29:10.368340
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b418e632228a4b1d6125ad with arrival 2023-08-02T18:30:00-05:00 is updated on 2023-07-16 19:29:10.371245
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b35a0578f452609900668e with arrival 2023-07-30T11:00:00-05:00 is updated on 2023-07-16 19:29:10.373569
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b33a088087f910725b5725 with arrival 2023-07-15T21:20:00-05:00 is updated on 2023-07-16 19:29:10.376629
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b320567bec69038a6c5fa7 with arrival 2023-10-13T09:45:00-05:00 is updated on 2023-07-16 19:29:10.378656
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b301a91d94b5620617dc85 with arrival 2023-07-16T16:35:00-05:00 is updated on 2023-07-16 19:29:10.380587
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2f393671b5a509f2d4733 with arrival 2023-07-17T19:45:00-05:00 is updated on 2023-07-16 19:29:10.382240
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2dbf0675e873ccb33bf72 with arrival 2023-08-12T16:05:00-05:00 is updated on 2023-07-16 19:29:10.383921
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2d8b2d1aa4344b329c435 with arrival 2023-07-15T21:50:00-05:00 is updated on 2023-07-16 19:29:10.385741
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2c3d7e2972708de0b84f8 with arrival 2023-07-15T21:30:00-05:00 is updated on 2023-07-16 19:29:10.388244
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2c02328b77c78ba43ba41 with arrival 2023-07-15T14:50:00-05:00 is updated on 2023-07-16 19:29:10.390375
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2be2457d5810875672a8d with arrival 2023-07-16T14:40:00-05:00 is updated on 2023-07-16 19:29:10.392031
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2b635135a606c812398e7 with arrival 2023-07-15T12:30:00-05:00 is updated on 2023-07-16 19:29:10.393585
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2b60f8c527002ca47ec11 with arrival 2023-07-15T16:05:00-05:00 is updated on 2023-07-16 19:29:10.395017
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2aebccbb04d4bb33ee3d4 with arrival 2023-07-15T14:15:00-05:00 is updated on 2023-07-16 19:29:10.396477
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b2207d2209b24ead17bae3 with arrival 2023-07-16T14:30:00-05:00 is updated on 2023-07-16 19:29:10.398056
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b1f36d85ea466e9611ada5 with arrival 2023-07-18T16:15:00-05:00 is updated on 2023-07-16 19:29:10.399916
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b1d46f5378be43db5bd993 with arrival 2023-07-16T18:00:00-05:00 is updated on 2023-07-16 19:29:10.401808
+DEBUG 16/July/2023 19:29:10 data_upsert:	 64b1d4144dec1c35bd6e36a3 with arrival 2023-07-14T19:55:00-05:00 is updated on 2023-07-16 19:29:10.403801
+DEBUG 16/July/2023 19:29:26 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 19:29:27 load_order_events_api:	 Processing Data for plano on 2023-07-16 19:29:27.376002. Count : 20
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b439e8310d7364f05a3fe7 with arrival 2023-07-17T09:25:00-05:00 is updated on 2023-07-16 19:29:27.421916
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b41a4a503568313f464247 with arrival 2023-07-16T13:30:00-05:00 is updated on 2023-07-16 19:29:27.426366
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b418e632228a4b1d6125ad with arrival 2023-08-02T18:30:00-05:00 is updated on 2023-07-16 19:29:27.429516
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b35a0578f452609900668e with arrival 2023-07-30T11:00:00-05:00 is updated on 2023-07-16 19:29:27.433061
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b33a088087f910725b5725 with arrival 2023-07-15T21:20:00-05:00 is updated on 2023-07-16 19:29:27.436793
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b320567bec69038a6c5fa7 with arrival 2023-10-13T09:45:00-05:00 is updated on 2023-07-16 19:29:27.440062
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b301a91d94b5620617dc85 with arrival 2023-07-16T16:35:00-05:00 is updated on 2023-07-16 19:29:27.444399
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2f393671b5a509f2d4733 with arrival 2023-07-17T19:45:00-05:00 is updated on 2023-07-16 19:29:27.447852
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2dbf0675e873ccb33bf72 with arrival 2023-08-12T16:05:00-05:00 is updated on 2023-07-16 19:29:27.450810
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2d8b2d1aa4344b329c435 with arrival 2023-07-15T21:50:00-05:00 is updated on 2023-07-16 19:29:27.454011
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2c3d7e2972708de0b84f8 with arrival 2023-07-15T21:30:00-05:00 is updated on 2023-07-16 19:29:27.459564
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2c02328b77c78ba43ba41 with arrival 2023-07-15T14:50:00-05:00 is updated on 2023-07-16 19:29:27.462521
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2be2457d5810875672a8d with arrival 2023-07-16T14:40:00-05:00 is updated on 2023-07-16 19:29:27.466003
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2b635135a606c812398e7 with arrival 2023-07-15T12:30:00-05:00 is updated on 2023-07-16 19:29:27.471007
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2b60f8c527002ca47ec11 with arrival 2023-07-15T16:05:00-05:00 is updated on 2023-07-16 19:29:27.474450
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2aebccbb04d4bb33ee3d4 with arrival 2023-07-15T14:15:00-05:00 is updated on 2023-07-16 19:29:27.478028
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b2207d2209b24ead17bae3 with arrival 2023-07-16T14:30:00-05:00 is updated on 2023-07-16 19:29:27.481918
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b1f36d85ea466e9611ada5 with arrival 2023-07-18T16:15:00-05:00 is updated on 2023-07-16 19:29:27.485580
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b1d46f5378be43db5bd993 with arrival 2023-07-16T18:00:00-05:00 is updated on 2023-07-16 19:29:27.489023
+DEBUG 16/July/2023 19:29:27 data_upsert:	 64b1d4144dec1c35bd6e36a3 with arrival 2023-07-14T19:55:00-05:00 is updated on 2023-07-16 19:29:27.492097
+DEBUG 16/July/2023 19:30:36 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 19:30:37 load_order_events_api:	 Processing Data for plano on 2023-07-16 19:30:37.757060. Count : 20
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b439e8310d7364f05a3fe7 with arrival 2023-07-17T09:25:00-05:00 is updated on 2023-07-16 19:30:37.833627
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b41a4a503568313f464247 with arrival 2023-07-16T13:30:00-05:00 is updated on 2023-07-16 19:30:37.840801
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b418e632228a4b1d6125ad with arrival 2023-08-02T18:30:00-05:00 is updated on 2023-07-16 19:30:37.844253
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b35a0578f452609900668e with arrival 2023-07-30T11:00:00-05:00 is updated on 2023-07-16 19:30:37.847121
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b33a088087f910725b5725 with arrival 2023-07-15T21:20:00-05:00 is updated on 2023-07-16 19:30:37.850590
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b320567bec69038a6c5fa7 with arrival 2023-10-13T09:45:00-05:00 is updated on 2023-07-16 19:30:37.853177
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b301a91d94b5620617dc85 with arrival 2023-07-16T16:35:00-05:00 is updated on 2023-07-16 19:30:37.856560
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2f393671b5a509f2d4733 with arrival 2023-07-17T19:45:00-05:00 is updated on 2023-07-16 19:30:37.858657
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2dbf0675e873ccb33bf72 with arrival 2023-08-12T16:05:00-05:00 is updated on 2023-07-16 19:30:37.860627
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2d8b2d1aa4344b329c435 with arrival 2023-07-15T21:50:00-05:00 is updated on 2023-07-16 19:30:37.862752
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2c3d7e2972708de0b84f8 with arrival 2023-07-15T21:30:00-05:00 is updated on 2023-07-16 19:30:37.864310
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2c02328b77c78ba43ba41 with arrival 2023-07-15T14:50:00-05:00 is updated on 2023-07-16 19:30:37.866946
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2be2457d5810875672a8d with arrival 2023-07-16T14:40:00-05:00 is updated on 2023-07-16 19:30:37.870537
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2b635135a606c812398e7 with arrival 2023-07-15T12:30:00-05:00 is updated on 2023-07-16 19:30:37.873049
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2b60f8c527002ca47ec11 with arrival 2023-07-15T16:05:00-05:00 is updated on 2023-07-16 19:30:37.878430
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2aebccbb04d4bb33ee3d4 with arrival 2023-07-15T14:15:00-05:00 is updated on 2023-07-16 19:30:37.880042
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b2207d2209b24ead17bae3 with arrival 2023-07-16T14:30:00-05:00 is updated on 2023-07-16 19:30:37.881364
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b1f36d85ea466e9611ada5 with arrival 2023-07-18T16:15:00-05:00 is updated on 2023-07-16 19:30:37.883626
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b1d46f5378be43db5bd993 with arrival 2023-07-16T18:00:00-05:00 is updated on 2023-07-16 19:30:37.885442
+DEBUG 16/July/2023 19:30:37 data_upsert:	 64b1d4144dec1c35bd6e36a3 with arrival 2023-07-14T19:55:00-05:00 is updated on 2023-07-16 19:30:37.886798
+DEBUG 16/July/2023 19:31:20 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 19:31:21 load_order_events_api:	 Processing Data for plano on 2023-07-16 19:31:21.242236. Count : 1
+DEBUG 16/July/2023 19:31:21 data_upsert:	 64ada3592f07dc1ebf24ff1e with arrival 2023-07-20T16:00:00-05:00 is updated on 2023-07-16 19:31:21.299709
+DEBUG 16/July/2023 19:31:29 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 19:31:29 load_order_events_api:	 Processing Data for plano on 2023-07-16 19:31:29.850482. Count : 14
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b1d4144dec1c35bd6e36a3 with arrival 2023-07-14T19:55:00-05:00 is updated on 2023-07-16 19:31:29.863493
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b1bc304130d46f437a442f with arrival 2023-07-14T18:20:00-05:00 is updated on 2023-07-16 19:31:29.865941
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b1bb6afdd7583e37620a62 with arrival 2023-07-14T18:00:00-05:00 is updated on 2023-07-16 19:31:29.867576
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b19919dd6a525bec4fa147 with arrival 2023-07-14T20:15:00-05:00 is updated on 2023-07-16 19:31:29.869066
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b1782d496e4750076c9166 with arrival 2023-07-14T21:30:00-05:00 is updated on 2023-07-16 19:31:29.870803
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b15ffba881c04aaf1d0154 with arrival 2023-07-14T18:10:00-05:00 is updated on 2023-07-16 19:31:29.872648
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b159e6fadb2c7d2d087293 with arrival 2023-07-14T11:10:00-05:00 is updated on 2023-07-16 19:31:29.874491
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b0cc10e12a6c4dc30e71ba with arrival 2023-07-14T16:00:00-05:00 is updated on 2023-07-16 19:31:29.876185
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b0a993ab2bdd1aa1145ce2 with arrival 2023-07-14T12:55:00-05:00 is updated on 2023-07-16 19:31:29.877613
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64b07405b8a6495390667c32 with arrival 2023-07-14T14:40:00-05:00 is updated on 2023-07-16 19:31:29.879860
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64af2f406037f740f2345ef6 with arrival 2023-07-14T19:45:00-05:00 is updated on 2023-07-16 19:31:29.882038
+DEBUG 16/July/2023 19:31:29 data_upsert:	 64ab4b71707e7f229d34ce8e with arrival 2023-07-14T16:35:00-05:00 is updated on 2023-07-16 19:31:29.884171
+DEBUG 16/July/2023 19:31:29 data_upsert:	 649db7f4a2ba860c1338d7bd with arrival 2023-07-14T14:50:00-05:00 is updated on 2023-07-16 19:31:29.886379
+DEBUG 16/July/2023 19:31:29 data_upsert:	 647fa218aa4f527ffe3339c3 with arrival 2023-07-14T14:00:00-05:00 is updated on 2023-07-16 19:31:29.888257
+DEBUG 16/July/2023 19:31:42 load_order_events_api:	 ****************************************************************************************************
+DEBUG 16/July/2023 19:32:00 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 19:32:00 load_order_events_api:	 Processing Data for plano on 2023-07-16 19:32:00.513101. Count : 0
+ERROR 16/July/2023 21:41:19 load_order_events_api:	 Failed to generate dates ... can't compare datetime.datetime to datetime.date
+DEBUG 16/July/2023 21:48:02 load_order_events_api:	 ****************************************************************************************************
+DEBUG 16/July/2023 21:48:54 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:48:55 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:48:55.581197. Count : 18
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a094ef145d8811eb609abd with arrival 2023-07-01T17:50:00-05:00 is updated on 2023-07-16 21:48:55.684856
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a090150583af699f649b62 with arrival 2023-07-01T16:15:00-05:00 is updated on 2023-07-16 21:48:55.691085
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a08e2bbf89da703c1d4bea with arrival 2023-07-01T19:30:00-05:00 is updated on 2023-07-16 21:48:55.694029
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a08d258942652ed1700255 with arrival 2023-07-01T16:05:00-05:00 is updated on 2023-07-16 21:48:55.696522
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a086cde4867f04222c5f3c with arrival 2023-07-01T16:35:00-05:00 is updated on 2023-07-16 21:48:55.699022
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a06a76e8a25a64073526f1 with arrival 2023-07-01T17:45:00-05:00 is updated on 2023-07-16 21:48:55.701532
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a06909fe85c632b55b461f with arrival 2023-07-01T16:45:00-05:00 is updated on 2023-07-16 21:48:55.704497
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a0654f3dab7d1c6b3392c9 with arrival 2023-07-01T16:00:00-05:00 is updated on 2023-07-16 21:48:55.706713
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64a046185f1f9747ad74caf3 with arrival 2023-07-01T12:35:00-05:00 is updated on 2023-07-16 21:48:55.708686
+DEBUG 16/July/2023 21:48:55 data_upsert:	 649fb00a1f73013cf815de11 with arrival 2023-07-01T11:20:00-05:00 is updated on 2023-07-16 21:48:55.710638
+DEBUG 16/July/2023 21:48:55 data_upsert:	 649f9080054cef43e82fb5d2 with arrival 2023-07-01T13:35:00-05:00 is updated on 2023-07-16 21:48:55.712807
+DEBUG 16/July/2023 21:48:55 data_upsert:	 649f3b0984d207095f4355cf with arrival 2023-07-01T14:30:00-05:00 is updated on 2023-07-16 21:48:55.715134
+DEBUG 16/July/2023 21:48:55 data_upsert:	 649d7d026a7957722a7272ac with arrival 2023-07-01T19:45:00-05:00 is updated on 2023-07-16 21:48:55.717396
+DEBUG 16/July/2023 21:48:55 data_upsert:	 649a57cfe53a996c386707b6 with arrival 2023-07-01T18:00:00-05:00 is updated on 2023-07-16 21:48:55.719774
+DEBUG 16/July/2023 21:48:55 data_upsert:	 6499c7214f93dd403c5c9d37 with arrival 2023-07-01T14:20:00-05:00 is updated on 2023-07-16 21:48:55.722134
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64989af26ce5b419216848c3 with arrival 2023-07-01T15:00:00-05:00 is updated on 2023-07-16 21:48:55.724532
+DEBUG 16/July/2023 21:48:55 data_upsert:	 649074dcdbf9c173c93385ce with arrival 2023-07-01T21:50:00-05:00 is updated on 2023-07-16 21:48:55.726744
+DEBUG 16/July/2023 21:48:55 data_upsert:	 64852a97a766d631ee2f349f with arrival 2023-07-01T14:15:00-05:00 is updated on 2023-07-16 21:48:55.728986
+DEBUG 16/July/2023 21:48:55 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:48:56 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:48:56.195546. Count : 6
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a1dff131adbc11270c2763 with arrival 2023-07-02T16:45:00-05:00 is updated on 2023-07-16 21:48:56.197814
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a1b6da577b2023127a623e with arrival 2023-07-02T17:50:00-05:00 is updated on 2023-07-16 21:48:56.201648
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a0f5853aa084568e31e216 with arrival 2023-07-02T19:30:00-05:00 is updated on 2023-07-16 21:48:56.204679
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a0631238eb7f2f473f2031 with arrival 2023-07-02T17:45:00-05:00 is updated on 2023-07-16 21:48:56.207458
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a05b0f43993433046c361c with arrival 2023-07-02T10:50:00-05:00 is updated on 2023-07-16 21:48:56.210122
+DEBUG 16/July/2023 21:48:56 data_upsert:	 649f8029ce5a20089235ed27 with arrival 2023-07-02T19:45:00-05:00 is updated on 2023-07-16 21:48:56.212828
+DEBUG 16/July/2023 21:48:56 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:48:56 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:48:56.769244. Count : 14
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a37af7f818c62fde592066 with arrival 2023-07-03T22:00:00-05:00 is updated on 2023-07-16 21:48:56.771171
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a3478a326ea308ae017a03 with arrival 2023-07-03T20:15:00-05:00 is updated on 2023-07-16 21:48:56.773761
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a33c12ca631d41ec102ba4 with arrival 2023-07-03T19:55:00-05:00 is updated on 2023-07-16 21:48:56.775874
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a3056eabf78f457c6f73b4 with arrival 2023-07-03T17:45:00-05:00 is updated on 2023-07-16 21:48:56.777836
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a2e0937a73284f2c2b9e62 with arrival 2023-07-03T14:50:00-05:00 is updated on 2023-07-16 21:48:56.779740
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a2d78b46d8e6018b0e1747 with arrival 2023-07-03T12:00:00-05:00 is updated on 2023-07-16 21:48:56.781609
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a2d093597b2e5e0414467f with arrival 2023-07-03T18:35:00-05:00 is updated on 2023-07-16 21:48:56.783483
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a261604aac747afc60b5bd with arrival 2023-07-03T16:00:00-05:00 is updated on 2023-07-16 21:48:56.785403
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a1fd280857dd07205feb13 with arrival 2023-07-03T18:20:00-05:00 is updated on 2023-07-16 21:48:56.787350
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a1eed8b4b9631a3d4ffc32 with arrival 2023-07-03T09:15:00-05:00 is updated on 2023-07-16 21:48:56.789202
+DEBUG 16/July/2023 21:48:56 data_upsert:	 64a0c88281d8006536554f89 with arrival 2023-07-03T12:35:00-05:00 is updated on 2023-07-16 21:48:56.791078
+DEBUG 16/July/2023 21:48:56 data_upsert:	 6491281cfe5d3557be596a02 with arrival 2023-07-03T14:40:00-05:00 is updated on 2023-07-16 21:48:56.792972
+DEBUG 16/July/2023 21:48:56 data_upsert:	 648618f57fb86d112c69e046 with arrival 2023-07-03T10:50:00-05:00 is updated on 2023-07-16 21:48:56.795074
+DEBUG 16/July/2023 21:48:56 data_upsert:	 647e67bb44bd6f027a506d48 with arrival 2023-07-03T16:45:00-05:00 is updated on 2023-07-16 21:48:56.796970
+DEBUG 16/July/2023 21:48:56 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:48:57 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:48:57.481796. Count : 10
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a47ef18abbbc3ab53997dc with arrival 2023-07-04T17:45:00-05:00 is updated on 2023-07-16 21:48:57.483493
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a4410a10deb34a572feeb8 with arrival 2023-07-04T16:15:00-05:00 is updated on 2023-07-16 21:48:57.485756
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a398b65c57e97de50dd4f3 with arrival 2023-07-04T09:45:00-05:00 is updated on 2023-07-16 21:48:57.487561
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a37fa285dbe326cf28eefc with arrival 2023-07-04T13:05:00-05:00 is updated on 2023-07-16 21:48:57.489825
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a352a515bc20140f368959 with arrival 2023-07-04T12:45:00-05:00 is updated on 2023-07-16 21:48:57.491922
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a34b711bcade6fc76a78a9 with arrival 2023-07-04T14:30:00-05:00 is updated on 2023-07-16 21:48:57.493950
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a2f822fa8368538e337b24 with arrival 2023-07-04T14:20:00-05:00 is updated on 2023-07-16 21:48:57.496059
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a1c15e646de511d6675b77 with arrival 2023-07-04T17:50:00-05:00 is updated on 2023-07-16 21:48:57.498309
+DEBUG 16/July/2023 21:48:57 data_upsert:	 649b8cfe0bf058420e19cfd6 with arrival 2023-07-04T16:25:00-05:00 is updated on 2023-07-16 21:48:57.500488
+DEBUG 16/July/2023 21:48:57 data_upsert:	 648e2173e59a8b786e429192 with arrival 2023-07-04T11:00:00-05:00 is updated on 2023-07-16 21:48:57.502691
+DEBUG 16/July/2023 21:48:57 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:48:57 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:48:57.870737. Count : 6
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a5faf50f515e121f40c172 with arrival 2023-07-05T19:55:00-05:00 is updated on 2023-07-16 21:48:57.873223
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a5a5c326b2bf412414a529 with arrival 2023-07-05T16:00:00-05:00 is updated on 2023-07-16 21:48:57.876793
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a59ea3e62f4f6202049606 with arrival 2023-07-05T16:15:00-05:00 is updated on 2023-07-16 21:48:57.879160
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a59c4156dbf67c0d328d59 with arrival 2023-07-05T15:10:00-05:00 is updated on 2023-07-16 21:48:57.881533
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a589bb38aff748b86ca07a with arrival 2023-07-05T12:35:00-05:00 is updated on 2023-07-16 21:48:57.883905
+DEBUG 16/July/2023 21:48:57 data_upsert:	 64a4b8cffcc9ff6f9f17dc96 with arrival 2023-07-05T14:40:00-05:00 is updated on 2023-07-16 21:48:57.886234
+DEBUG 16/July/2023 21:48:57 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:48:58 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:48:58.522264. Count : 6
+DEBUG 16/July/2023 21:48:58 data_upsert:	 64a724a460cc205c3757b132 with arrival 2023-07-06T19:30:00-05:00 is updated on 2023-07-16 21:48:58.524186
+DEBUG 16/July/2023 21:48:58 data_upsert:	 64a62ca67817614b0d01f5b5 with arrival 2023-07-06T21:30:00-05:00 is updated on 2023-07-16 21:48:58.527237
+DEBUG 16/July/2023 21:48:58 data_upsert:	 64a61a6f919e665208402c0e with arrival 2023-07-06T14:20:00-05:00 is updated on 2023-07-16 21:48:58.529773
+DEBUG 16/July/2023 21:48:58 data_upsert:	 64a5cb19b655c76f3e6a64b7 with arrival 2023-07-06T16:35:00-05:00 is updated on 2023-07-16 21:48:58.532108
+DEBUG 16/July/2023 21:48:58 data_upsert:	 64a464f6fb4dc569bf672dc8 with arrival 2023-07-06T18:20:00-05:00 is updated on 2023-07-16 21:48:58.534789
+DEBUG 16/July/2023 21:48:58 data_upsert:	 64a460429864f20094748550 with arrival 2023-07-06T16:15:00-05:00 is updated on 2023-07-16 21:48:58.537130
+DEBUG 16/July/2023 21:48:58 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:48:59 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:48:59.468711. Count : 14
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a871d019360c1b6b46282f with arrival 2023-07-07T19:45:00-05:00 is updated on 2023-07-16 21:48:59.470201
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a870bd8bf4402b2029837c with arrival 2023-07-07T19:35:00-05:00 is updated on 2023-07-16 21:48:59.471749
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a86d7fb72b2d78256a42dd with arrival 2023-07-07T18:20:00-05:00 is updated on 2023-07-16 21:48:59.473134
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a85c3dd001d63bb57eead8 with arrival 2023-07-07T16:45:00-05:00 is updated on 2023-07-16 21:48:59.474494
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a857fc6b056b0640361878 with arrival 2023-07-07T16:35:00-05:00 is updated on 2023-07-16 21:48:59.476237
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a8364f56d8ef1cd10056ff with arrival 2023-07-07T18:10:00-05:00 is updated on 2023-07-16 21:48:59.477483
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a827959c5e3d5061720e33 with arrival 2023-07-07T14:40:00-05:00 is updated on 2023-07-16 21:48:59.478665
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a777568adee94f38048315 with arrival 2023-07-07T14:20:00-05:00 is updated on 2023-07-16 21:48:59.480304
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a7642f1f38184f494e2d1e with arrival 2023-07-07T18:00:00-05:00 is updated on 2023-07-16 21:48:59.481947
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a760e75f9bf63fe36907f4 with arrival 2023-07-07T18:35:00-05:00 is updated on 2023-07-16 21:48:59.483268
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a73e4b480058790c40c401 with arrival 2023-07-07T11:10:00-05:00 is updated on 2023-07-16 21:48:59.484774
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a6d1c1e05a46251c60744c with arrival 2023-07-07T21:30:00-05:00 is updated on 2023-07-16 21:48:59.486188
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a61eb8709b386d012cf707 with arrival 2023-07-07T10:45:00-05:00 is updated on 2023-07-16 21:48:59.488567
+DEBUG 16/July/2023 21:48:59 data_upsert:	 64a618e513085565016ae2d2 with arrival 2023-07-07T14:00:00-05:00 is updated on 2023-07-16 21:48:59.491013
+DEBUG 16/July/2023 21:48:59 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:00 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:00.577222. Count : 20
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64aa0a827e4d092e75763082 with arrival 2023-07-08T21:50:00-05:00 is updated on 2023-07-16 21:49:00.579443
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a9f9939a30785ccb2449d9 with arrival 2023-07-08T21:15:00-05:00 is updated on 2023-07-16 21:49:00.582707
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a9f1d01b45d6466e72e49e with arrival 2023-07-08T21:40:00-05:00 is updated on 2023-07-16 21:49:00.585256
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a9d0b6f86e9463c54a26f4 with arrival 2023-07-08T21:30:00-05:00 is updated on 2023-07-16 21:49:00.587725
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a9c867134d6b099349321c with arrival 2023-07-08T19:30:00-05:00 is updated on 2023-07-16 21:49:00.589980
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a9bb63010a7f6d7562d5e2 with arrival 2023-07-08T19:45:00-05:00 is updated on 2023-07-16 21:49:00.592259
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a9b9c3769b492b5204a8cf with arrival 2023-07-08T20:15:00-05:00 is updated on 2023-07-16 21:49:00.594520
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a977d5ccef702416214d46 with arrival 2023-07-08T16:05:00-05:00 is updated on 2023-07-16 21:49:00.596722
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a8d94132d99642256d70ab with arrival 2023-07-08T09:45:00-05:00 is updated on 2023-07-16 21:49:00.598931
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a8bca026fb8254f2419312 with arrival 2023-07-08T16:25:00-05:00 is updated on 2023-07-16 21:49:00.601257
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a868046027d6691526c1f8 with arrival 2023-07-08T14:20:00-05:00 is updated on 2023-07-16 21:49:00.603528
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a865ba742de3650679595b with arrival 2023-07-08T13:15:00-05:00 is updated on 2023-07-16 21:49:00.605527
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a84f920d885878c170fcfb with arrival 2023-07-08T11:00:00-05:00 is updated on 2023-07-16 21:49:00.607394
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a7653f13a8386c5e700e01 with arrival 2023-07-08T14:30:00-05:00 is updated on 2023-07-16 21:49:00.609445
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a49cb5b5e8914fb94cd384 with arrival 2023-07-08T17:30:00-05:00 is updated on 2023-07-16 21:49:00.611498
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a47c1e7e59ec6fc043d802 with arrival 2023-07-08T20:05:00-05:00 is updated on 2023-07-16 21:49:00.613423
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64a4306358cce0168e5caa37 with arrival 2023-07-08T12:35:00-05:00 is updated on 2023-07-16 21:49:00.615314
+DEBUG 16/July/2023 21:49:00 data_upsert:	 649ba3262626400ac24f0489 with arrival 2023-07-08T18:00:00-05:00 is updated on 2023-07-16 21:49:00.617151
+DEBUG 16/July/2023 21:49:00 data_upsert:	 64986f08881b8166c322821f with arrival 2023-07-08T16:00:00-05:00 is updated on 2023-07-16 21:49:00.618913
+DEBUG 16/July/2023 21:49:00 data_upsert:	 6497889532c7484b2e241fdf with arrival 2023-07-08T16:45:00-05:00 is updated on 2023-07-16 21:49:00.620498
+DEBUG 16/July/2023 21:49:00 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:01 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:01.309173. Count : 11
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64ab45e898117424a75ee5c1 with arrival 2023-07-09T19:30:00-05:00 is updated on 2023-07-16 21:49:01.310873
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64ab2d61e118a824167e86de with arrival 2023-07-09T18:30:00-05:00 is updated on 2023-07-16 21:49:01.313500
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64ab1b6dcc7d851e1e0eeb7c with arrival 2023-07-09T18:20:00-05:00 is updated on 2023-07-16 21:49:01.315396
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64aaf7e18648a267814c5523 with arrival 2023-07-09T14:40:00-05:00 is updated on 2023-07-16 21:49:01.317172
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64aaee20697dfd0b453f7e1f with arrival 2023-07-09T14:15:00-05:00 is updated on 2023-07-16 21:49:01.318946
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64aacd589e1e3b04677edd1a with arrival 2023-07-09T12:35:00-05:00 is updated on 2023-07-16 21:49:01.320621
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64a9f5725fd7e2341b720ad0 with arrival 2023-07-09T11:00:00-05:00 is updated on 2023-07-16 21:49:01.322529
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64a8a6d735f3546fc7156990 with arrival 2023-07-09T18:00:00-05:00 is updated on 2023-07-16 21:49:01.324134
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64a45dbc607f8e71b766b922 with arrival 2023-07-09T19:45:00-05:00 is updated on 2023-07-16 21:49:01.325926
+DEBUG 16/July/2023 21:49:01 data_upsert:	 648a00ac78abb47b3774cfc2 with arrival 2023-07-09T14:00:00-05:00 is updated on 2023-07-16 21:49:01.327702
+DEBUG 16/July/2023 21:49:01 data_upsert:	 6489fe1208d4a37f5d3a926a with arrival 2023-07-09T14:00:00-05:00 is updated on 2023-07-16 21:49:01.329467
+DEBUG 16/July/2023 21:49:01 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:01 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:01.776599. Count : 8
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64ac5378700f93124429cd1b with arrival 2023-07-10T19:35:00-05:00 is updated on 2023-07-16 21:49:01.778754
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64ac2c744453bf59821a20f0 with arrival 2023-07-10T18:30:00-05:00 is updated on 2023-07-16 21:49:01.781875
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64ab6cf286f5ee577f597339 with arrival 2023-07-10T18:20:00-05:00 is updated on 2023-07-16 21:49:01.784424
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64aab5687b8b5e6db14e5e38 with arrival 2023-07-10T15:00:00-05:00 is updated on 2023-07-16 21:49:01.787114
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64a31fbfbc3f8f7055711c26 with arrival 2023-07-10T14:40:00-05:00 is updated on 2023-07-16 21:49:01.790675
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64a076d4d0d7cc7e2920d8f5 with arrival 2023-07-10T16:45:00-05:00 is updated on 2023-07-16 21:49:01.792888
+DEBUG 16/July/2023 21:49:01 data_upsert:	 64a074630bd0772ca01896cb with arrival 2023-07-10T16:45:00-05:00 is updated on 2023-07-16 21:49:01.794921
+DEBUG 16/July/2023 21:49:01 data_upsert:	 649f48d96390127e7f2e67b5 with arrival 2023-07-10T13:15:00-05:00 is updated on 2023-07-16 21:49:01.797137
+DEBUG 16/July/2023 21:49:01 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:02 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:02.545671. Count : 6
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64ad8904a159eb50240d264c with arrival 2023-07-11T16:00:00-05:00 is updated on 2023-07-16 21:49:02.547994
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64ac6b1652498662f7207ee4 with arrival 2023-07-11T14:40:00-05:00 is updated on 2023-07-16 21:49:02.550359
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64ac3434da0fef22ff3dfdf1 with arrival 2023-07-11T14:50:00-05:00 is updated on 2023-07-16 21:49:02.551951
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64ab3ad3a620dd6ea91e2e82 with arrival 2023-07-11T17:50:00-05:00 is updated on 2023-07-16 21:49:02.553985
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64a723517c1ec86223648a74 with arrival 2023-07-11T18:00:00-05:00 is updated on 2023-07-16 21:49:02.555908
+DEBUG 16/July/2023 21:49:02 data_upsert:	 6480b6a1058f1966d26ffc37 with arrival 2023-07-11T19:00:00-05:00 is updated on 2023-07-16 21:49:02.557882
+DEBUG 16/July/2023 21:49:02 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:02 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:02.967880. Count : 5
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64af50d04792f86dcc13d01b with arrival 2023-07-12T21:50:00-05:00 is updated on 2023-07-16 21:49:02.971083
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64aee0c1810bb41b1b632872 with arrival 2023-07-12T19:45:00-05:00 is updated on 2023-07-16 21:49:02.974797
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64adc2425de709104b6d7c25 with arrival 2023-07-12T12:55:00-05:00 is updated on 2023-07-16 21:49:02.977288
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64ac5f583d10ca654f283bb6 with arrival 2023-07-12T14:50:00-05:00 is updated on 2023-07-16 21:49:02.980139
+DEBUG 16/July/2023 21:49:02 data_upsert:	 64ab2b326decbd64b6458bf2 with arrival 2023-07-12T18:00:00-05:00 is updated on 2023-07-16 21:49:02.982611
+DEBUG 16/July/2023 21:49:02 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:03 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:03.499999. Count : 8
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64b070d576f2c274e82c1d30 with arrival 2023-07-13T18:20:00-05:00 is updated on 2023-07-16 21:49:03.503120
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64b070a1c828532a686852ac with arrival 2023-07-13T18:35:00-05:00 is updated on 2023-07-16 21:49:03.505532
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64b04910d9bd240972780bd2 with arrival 2023-07-13T21:15:00-05:00 is updated on 2023-07-16 21:49:03.507485
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64b0375a6fb04858a737d66c with arrival 2023-07-13T14:40:00-05:00 is updated on 2023-07-16 21:49:03.509624
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64af4ed44891fc74ee0e9b19 with arrival 2023-07-13T18:00:00-05:00 is updated on 2023-07-16 21:49:03.511757
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64ad8f60230f1156c81feea4 with arrival 2023-07-13T21:30:00-05:00 is updated on 2023-07-16 21:49:03.513678
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64a8532abf875d3348439f0d with arrival 2023-07-13T19:45:00-05:00 is updated on 2023-07-16 21:49:03.515816
+DEBUG 16/July/2023 21:49:03 data_upsert:	 64a71e63c4907c4bfb425e1a with arrival 2023-07-13T16:05:00-05:00 is updated on 2023-07-16 21:49:03.517924
+DEBUG 16/July/2023 21:49:03 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:04 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:04.179064. Count : 14
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b1d4144dec1c35bd6e36a3 with arrival 2023-07-14T19:55:00-05:00 is updated on 2023-07-16 21:49:04.180808
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b1bc304130d46f437a442f with arrival 2023-07-14T18:20:00-05:00 is updated on 2023-07-16 21:49:04.183157
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b1bb6afdd7583e37620a62 with arrival 2023-07-14T18:00:00-05:00 is updated on 2023-07-16 21:49:04.185343
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b19919dd6a525bec4fa147 with arrival 2023-07-14T20:15:00-05:00 is updated on 2023-07-16 21:49:04.188427
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b1782d496e4750076c9166 with arrival 2023-07-14T21:30:00-05:00 is updated on 2023-07-16 21:49:04.191063
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b15ffba881c04aaf1d0154 with arrival 2023-07-14T18:10:00-05:00 is updated on 2023-07-16 21:49:04.193365
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b159e6fadb2c7d2d087293 with arrival 2023-07-14T11:10:00-05:00 is updated on 2023-07-16 21:49:04.195235
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b0cc10e12a6c4dc30e71ba with arrival 2023-07-14T16:00:00-05:00 is updated on 2023-07-16 21:49:04.197730
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b0a993ab2bdd1aa1145ce2 with arrival 2023-07-14T12:55:00-05:00 is updated on 2023-07-16 21:49:04.200605
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64b07405b8a6495390667c32 with arrival 2023-07-14T14:40:00-05:00 is updated on 2023-07-16 21:49:04.203256
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64af2f406037f740f2345ef6 with arrival 2023-07-14T19:45:00-05:00 is updated on 2023-07-16 21:49:04.205771
+DEBUG 16/July/2023 21:49:04 data_upsert:	 64ab4b71707e7f229d34ce8e with arrival 2023-07-14T16:35:00-05:00 is updated on 2023-07-16 21:49:04.208026
+DEBUG 16/July/2023 21:49:04 data_upsert:	 649db7f4a2ba860c1338d7bd with arrival 2023-07-14T14:50:00-05:00 is updated on 2023-07-16 21:49:04.210393
+DEBUG 16/July/2023 21:49:04 data_upsert:	 647fa218aa4f527ffe3339c3 with arrival 2023-07-14T14:00:00-05:00 is updated on 2023-07-16 21:49:04.212649
+DEBUG 16/July/2023 21:49:04 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:05 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:05.045493. Count : 19
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b33a088087f910725b5725 with arrival 2023-07-15T21:20:00-05:00 is updated on 2023-07-16 21:49:05.047758
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2d8b2d1aa4344b329c435 with arrival 2023-07-15T21:50:00-05:00 is updated on 2023-07-16 21:49:05.050802
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2c3d7e2972708de0b84f8 with arrival 2023-07-15T21:30:00-05:00 is updated on 2023-07-16 21:49:05.053170
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2c02328b77c78ba43ba41 with arrival 2023-07-15T14:50:00-05:00 is updated on 2023-07-16 21:49:05.055359
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2b635135a606c812398e7 with arrival 2023-07-15T12:30:00-05:00 is updated on 2023-07-16 21:49:05.057868
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2b60f8c527002ca47ec11 with arrival 2023-07-15T16:05:00-05:00 is updated on 2023-07-16 21:49:05.059978
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2aebccbb04d4bb33ee3d4 with arrival 2023-07-15T14:15:00-05:00 is updated on 2023-07-16 21:49:05.062039
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b1cc27a64c234f8930195b with arrival 2023-07-15T14:40:00-05:00 is updated on 2023-07-16 21:49:05.064187
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b1c3e66a8972143d31f289 with arrival 2023-07-15T12:45:00-05:00 is updated on 2023-07-16 21:49:05.066185
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b1adb953e6e42b9935423b with arrival 2023-07-15T15:00:00-05:00 is updated on 2023-07-16 21:49:05.068212
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b19a3780cf4d6d901afec2 with arrival 2023-07-15T12:55:00-05:00 is updated on 2023-07-16 21:49:05.070248
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b05f38457e557c653d289b with arrival 2023-07-15T17:45:00-05:00 is updated on 2023-07-16 21:49:05.072333
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64af05cb7010d46afb566561 with arrival 2023-07-15T11:20:00-05:00 is updated on 2023-07-16 21:49:05.074796
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64aacb507ae0c10b1b5afa39 with arrival 2023-07-15T19:55:00-05:00 is updated on 2023-07-16 21:49:05.076869
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64a38480d91b4771446a43d0 with arrival 2023-07-15T11:00:00-05:00 is updated on 2023-07-16 21:49:05.078837
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64a35b66d8599b5fa7640a6c with arrival 2023-07-15T17:15:00-05:00 is updated on 2023-07-16 21:49:05.080791
+DEBUG 16/July/2023 21:49:05 data_upsert:	 649f4d3b5c07ca242f2eb959 with arrival 2023-07-15T13:15:00-05:00 is updated on 2023-07-16 21:49:05.082644
+DEBUG 16/July/2023 21:49:05 data_upsert:	 649c8a8fdf908124b8396e65 with arrival 2023-07-15T16:45:00-05:00 is updated on 2023-07-16 21:49:05.084361
+DEBUG 16/July/2023 21:49:05 data_upsert:	 649888d5d55881233f3db7f4 with arrival 2023-07-15T19:00:00-05:00 is updated on 2023-07-16 21:49:05.086927
+DEBUG 16/July/2023 21:49:05 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 21:49:05 load_order_events_api:	 Processing Data for Plano on 2023-07-16 21:49:05.522629. Count : 12
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b45dfd9866a603b64d7af5 with arrival 2023-07-16T19:30:00-05:00is created
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b41a4a503568313f464247 with arrival 2023-07-16T13:30:00-05:00 is updated on 2023-07-16 21:49:05.529438
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b301a91d94b5620617dc85 with arrival 2023-07-16T16:35:00-05:00 is updated on 2023-07-16 21:49:05.531968
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2be2457d5810875672a8d with arrival 2023-07-16T14:40:00-05:00 is updated on 2023-07-16 21:49:05.534484
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b2207d2209b24ead17bae3 with arrival 2023-07-16T14:30:00-05:00 is updated on 2023-07-16 21:49:05.537122
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b1d46f5378be43db5bd993 with arrival 2023-07-16T18:00:00-05:00 is updated on 2023-07-16 21:49:05.539709
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b09c77a7f28f073e3f492c with arrival 2023-07-16T18:20:00-05:00 is updated on 2023-07-16 21:49:05.541974
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b06f1748a6c603246e7216 with arrival 2023-07-16T12:35:00-05:00 is updated on 2023-07-16 21:49:05.544178
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64b04ee87fa57b062649fbc6 with arrival 2023-07-16T17:45:00-05:00 is updated on 2023-07-16 21:49:05.546178
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64aa12a63d82b36ee07b9a4b with arrival 2023-07-16T16:15:00-05:00 is updated on 2023-07-16 21:49:05.548453
+DEBUG 16/July/2023 21:49:05 data_upsert:	 64862d9bf6771d0f3a0ca4ad with arrival 2023-07-16T16:00:00-05:00 is updated on 2023-07-16 21:49:05.550466
+DEBUG 16/July/2023 21:49:05 data_upsert:	 6486289f242eb310eb38ceee with arrival 2023-07-16T16:00:00-05:00 is updated on 2023-07-16 21:49:05.552612
+DEBUG 16/July/2023 22:36:35 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 22:36:36 load_order_events_api:	 Processing Data for Plano on 2023-07-16 22:36:36.595267. Count : 20
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b463c6be70ba28025be9d8 with arrival 2023-07-17T18:30:00-05:00is created
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b45dfd9866a603b64d7af5 with arrival 2023-07-16T19:30:00-05:00 is updated on 2023-07-16 22:36:36.670000
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b439e8310d7364f05a3fe7 with arrival 2023-07-17T09:25:00-05:00 is updated on 2023-07-16 22:36:36.674515
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b41a4a503568313f464247 with arrival 2023-07-16T13:30:00-05:00 is updated on 2023-07-16 22:36:36.677000
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b418e632228a4b1d6125ad with arrival 2023-08-02T18:30:00-05:00 is updated on 2023-07-16 22:36:36.679812
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b35a0578f452609900668e with arrival 2023-07-30T11:00:00-05:00 is updated on 2023-07-16 22:36:36.685143
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b33a088087f910725b5725 with arrival 2023-07-15T21:20:00-05:00 is updated on 2023-07-16 22:36:36.690791
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b320567bec69038a6c5fa7 with arrival 2023-10-13T09:45:00-05:00 is updated on 2023-07-16 22:36:36.697170
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b301a91d94b5620617dc85 with arrival 2023-07-16T16:35:00-05:00 is updated on 2023-07-16 22:36:36.702930
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2f393671b5a509f2d4733 with arrival 2023-07-17T19:45:00-05:00 is updated on 2023-07-16 22:36:36.705346
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2dbf0675e873ccb33bf72 with arrival 2023-08-12T16:05:00-05:00 is updated on 2023-07-16 22:36:36.707397
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2d8b2d1aa4344b329c435 with arrival 2023-07-15T21:50:00-05:00 is updated on 2023-07-16 22:36:36.709200
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2c3d7e2972708de0b84f8 with arrival 2023-07-15T21:30:00-05:00 is updated on 2023-07-16 22:36:36.711031
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2c02328b77c78ba43ba41 with arrival 2023-07-15T14:50:00-05:00 is updated on 2023-07-16 22:36:36.712585
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2be2457d5810875672a8d with arrival 2023-07-16T14:40:00-05:00 is updated on 2023-07-16 22:36:36.714444
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2b635135a606c812398e7 with arrival 2023-07-15T12:30:00-05:00 is updated on 2023-07-16 22:36:36.716302
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2b60f8c527002ca47ec11 with arrival 2023-07-15T16:05:00-05:00 is updated on 2023-07-16 22:36:36.718133
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2aebccbb04d4bb33ee3d4 with arrival 2023-07-15T14:15:00-05:00 is updated on 2023-07-16 22:36:36.720043
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b2207d2209b24ead17bae3 with arrival 2023-07-16T14:30:00-05:00 is updated on 2023-07-16 22:36:36.722054
+DEBUG 16/July/2023 22:36:36 data_upsert:	 64b1f36d85ea466e9611ada5 with arrival 2023-07-18T16:15:00-05:00 is updated on 2023-07-16 22:36:36.723989
+DEBUG 16/July/2023 22:36:43 load_order_events_api:	 ****************************************************************************************************
+INFO 16/July/2023 22:36:44 load_order_events_api:	 Processing Data for McKinney on 2023-07-16 22:36:44.251866. Count : 19
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b46cda1019cd08fa759ee5 with arrival 2023-07-17T12:05:00-05:00is created
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b46bad4ecf984593475b84 with arrival 2023-07-17T12:10:00-05:00is created
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b45a1b64f95c0ea10f001a with arrival 2023-07-16T18:25:00-05:00is created
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b458d8d748af5f507258db with arrival 2023-07-16T18:05:00-05:00is created
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b451555d98557d7b63de6c with arrival 2023-07-16T18:20:00-05:00is created
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b41518a0030a43c25c7887 with arrival 2023-07-16T15:05:00-05:00 is updated on 2023-07-16 22:36:44.314213
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b40ff902f6cf5e743be3c6 with arrival 2023-07-30T16:40:00-05:00 is updated on 2023-07-16 22:36:44.317199
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b40e9734e18512351f5b71 with arrival 2023-07-22T13:50:00-05:00 is updated on 2023-07-16 22:36:44.319455
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b3664327613370e5111b64 with arrival 2023-07-16T13:40:00-05:00 is updated on 2023-07-16 22:36:44.321600
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b3645474b4f610803ff4c0 with arrival 2023-07-16T16:35:00-05:00 is updated on 2023-07-16 22:36:44.323858
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b32d4673add9279d0b34cf with arrival 2023-07-15T18:35:00-05:00 is updated on 2023-07-16 22:36:44.326008
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b327ae226c5439467fc25b with arrival 2023-07-15T19:55:00-05:00 is updated on 2023-07-16 22:36:44.328062
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b305d5d9125c1d7b7933c7 with arrival 2023-07-15T21:05:00-05:00 is updated on 2023-07-16 22:36:44.330227
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b2f8a2ab7fcd30a71fbc01 with arrival 2023-07-15T18:25:00-05:00 is updated on 2023-07-16 22:36:44.332298
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b2e5a61eafbc56bc782a22 with arrival 2023-07-15T19:40:00-05:00 is updated on 2023-07-16 22:36:44.334339
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b2dbc13d8e78052c21be2c with arrival 2023-07-15T16:35:00-05:00 is updated on 2023-07-16 22:36:44.336441
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b2d1665047670d5c3f0726 with arrival 2023-07-15T16:50:00-05:00 is updated on 2023-07-16 22:36:44.338514
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b2d12df1f2177b035b17a7 with arrival 2023-07-23T15:20:00-05:00 is updated on 2023-07-16 22:36:44.340489
+DEBUG 16/July/2023 22:36:44 data_upsert:	 64b2c4ccf7f6670c3d0f94c1 with arrival 2023-07-15T18:20:00-05:00 is updated on 2023-07-16 22:36:44.342428

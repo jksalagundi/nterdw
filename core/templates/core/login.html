@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NTER Analytics Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+<body>
+{% load static %}
+{% csrf_token %}
+<div class="hero is-fullheight is-primary">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-8 is-offset-2">
+                <h3 class="title has-text-white">NTER Analytics Login</h3>
+                <hr class="login-hr">
+                <div class="box">
+                    <div class="box">
+                        <img src="{% static 'core/media/nterlogo.png' %}">
+                    </div>
+                    <div class="title has-text-grey is-5">Please enter your email and password.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

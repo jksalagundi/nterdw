@@ -1,0 +1,33 @@
+
+[{
+  "username": "jksalagundi@icloud.com",
+  "email": "jksalagundi@icloud.com",
+  "enabled": false,
+  "roles": [
+    "ROLE_DEVELOPER"
+  ],
+  "name": "Jayantha Salagundi",
+  "updated": "2023-06-18T22:21:12+00:00",
+  "apiKey": "arW2SqaWs_CL1u8dXiSi9NSZGtGE_d42DViWZecNfhw",
+  "type": 3,
+  "id": "648f835819c5557d6f402bd8",
+  "comments": "sandbox.xola.com"
+},
+{
+  "username": "jksalagundi@icloud.com",
+  "email": "jksalagundi@icloud.com",
+  "enabled": false,
+  "roles": [
+    "ROLE_DEVELOPER"
+  ],
+  "name": "Jayantha Salagundi",
+  "updated": "2023-06-18T22:22:54+00:00",
+  "apiKey": "_gGNcJfcct-f4v355FFOZmXVf4fbr7XmAcxnrzrHBKM",
+  "type": 3,
+  "id": "648f83be275b8066bb25ff04",
+  "comments": "xola.com",
+  "seller-id-mckinney":"591a17b5332e75a52a8b458f",
+  "seller-id-plano":"5cd9bce58c7e314a887072bb",
+  "experience-d":"596952ad6864eabc768b459b"
+}
+]

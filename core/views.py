@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from django.http import JsonResponse, HttpResponse
-from django.template import loader
+# from django.template import loader
 
 
 # Create your views here.
@@ -13,7 +13,7 @@ def front(request):
 
 def eod_report_ui(request):
     context = {}
-    return render(request, "index.html", context)
+    return render(request, "eod_ui.html", context)
 
 
 def sign_in(request):

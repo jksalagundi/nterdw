@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from core.views import front, sign_in
+from core.views import front, sign_in, eod_report_ui
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
@@ -24,8 +24,8 @@ urlpatterns = [
     path('orders/', include("orders.urls")),
     path('eod/', include("eodreport.urls")),
     path('masters/', include("masters.urls")),
-    path("", front, name='front'),
-    # path("eod_ui/", eod_report_ui, name='eod_report_ui'),
+    path("analytics/", front, name='front'),
+    path("", eod_report_ui, name="eod_ui"),
     path("login/", sign_in, name='sign_in'),
 ]
 urlpatterns += staticfiles_urlpatterns()

@@ -61,7 +61,7 @@ ROOT_URLCONF = 'nterdw.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build')],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build'), os.path.join(BASE_DIR, 'eod_report_ui', 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

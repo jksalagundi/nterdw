@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-import { UseDispatch, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Button } from "primereact/button";
 import { Dropdown } from "primereact/dropdown";
-import { changeLocation } from "../redux/mastersSlice";
+import { changeLocation } from "../redux/playground/mastersSlice";
+import { fetchMasters } from "../redux/reducers/mastersSlice";
 
 export const TopPanel = (setLoc) => {
     const location = useSelector((state) => state.masters.selectedLocation);
@@ -21,9 +22,14 @@ export const TopPanel = (setLoc) => {
                     tooltip="Select Location"/>
             </div>
             <div className="w-4 flex flex-row justify-content-center align-items-center h-3rem">
-                <p className="w-full text-3xl text-primary text-center ">EOD Reporting</p>
+                <p className="w-full text-2xl text-primary text-center ">EOD Reporting</p>
             </div>
             <div className="w-4 flex flex-row justify-end">
+                <Button label='Pull' icon='pi pi-pull' 
+                        onClick={()=>{
+                            console.log("Pulling masters from DB");
+                            dispatch(fetchMasters());
+                        }}/>
                 <p className="w-full text-xl font-light text-secondary text-right mt-2">
                     {`${new Date().toLocaleString()}`}
                 </p>

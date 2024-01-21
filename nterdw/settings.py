@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'corsheaders',
     'orders.apps.OrdersConfig',
     'core.apps.CoreConfig',
-    'eodreport.apps.EodreportConfig',
-    'masters.apps.MastersConfig'
+    'eodreport',
+    # 'masters.apps.MastersConfig',
+    'masters',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

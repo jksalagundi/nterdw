@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { changeGame } from "../redux/mastersSlice";
+// import { changeGame } 
 import { SelectButton } from "primereact/selectbutton";
 import { InputText } from "primereact/inputtext";
 import { Dialog } from "primereact/dialog";

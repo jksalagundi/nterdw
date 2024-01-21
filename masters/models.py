@@ -8,7 +8,7 @@ class Location(models.Model):
     Model that stores business location details
     """
     location_name = models.CharField(null=False, verbose_name="Location Name:", max_length=100)
-    description = models.CharField(null=True, default="Descripiton")
+    description = models.CharField(null=True, default="Descripiton", max_length=200)
     location_address = models.TextField(null=False, verbose_name="Location Address")
     location_phone = models.CharField(null=False, verbose_name="Location Phone Number", max_length=20)
     created_date = models.DateTimeField(auto_now=True)

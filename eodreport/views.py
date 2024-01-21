@@ -17,7 +17,7 @@ def __get_games_list(location):
 
 def eod_report_ui(request, location):
     try:
-        template = loader.get_template("eodreport/eod_ui.html")
+        template = loader.get_template("eod_prime/index.html")
         location_object = Location.objects.get(location_name=location.lower())
         context = {
             "location": f"NTER {location}",

@@ -61,7 +61,8 @@ ROOT_URLCONF = 'nterdw.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build'), os.path.join(BASE_DIR, 'eod_report_ui', 'build')],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build'), 
+                 os.path.join(BASE_DIR, 'eod_prime', 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,15 +87,27 @@ WSGI_APPLICATION = 'nterdw.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'nterdb',
+#         'USER': 'nteradmin',
+#         'PASSWORD': 'nter2$2$',
+#         'HOST': 'localhost',
+#     }
+# }
+
+# DB setup on local linux box
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'nterdb',
-        'USER': 'nteradmin',
-        'PASSWORD': 'nter2$2$',
+        'USER': 'jksalagundi',
+        'PASSWORD': 'Longmire2024',
         'HOST': 'localhost',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -174,7 +187,7 @@ LOGGING = {
     }
 }
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'frontend', 'build', 'static'),
-                    os.path.join(BASE_DIR, 'eod_report_ui', 'build', 'static')]
+                    os.path.join(BASE_DIR, 'eod_prime', 'build', 'static')]
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 # CORS_ALLOWED_ORIGINS = [

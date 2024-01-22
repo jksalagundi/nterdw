@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {PrimeReactProvider} from "primereact/api";
 import { TopPanel } from "./panels/TopPanel";
 import "primereact/resources/themes/lara-dark-amber/theme.css"
@@ -7,28 +7,19 @@ import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import { ShiftStatusPanel } from "./panels/ShiftStatusPanel";
 import { GameStatusPanel } from "./panels/GameStatusPanel";
-import axios from "axios";
+import {useSelector, useDispatch} from "react-redux";
+import {fetchMasters} from "./redux/reducers/mastersSlice";
 
 export const App = () => {
-
-    // const [locations, setLocations] = useState([]);
-    // const [loading, setLoading] = useState(false);
-    // useEffect(()=>{
-    //     console.log("Will be fetching data from server...");
-    //     axios.get("http://localhost:8000/masters/locations")
-    //         .then((res)=>{
-    //             console.log("Got this", res.data)
-    //             setLocations(res.data);
-    //             setLoading(true);
-    //         });
-    // }, [loading]);
-  
+    const dispatch = useDispatch();
+    const loading = useSelector( state => state.masters.loading );
+    useEffect(()=>{
+        dispatch(fetchMasters())
+    },[loading]);
     return(
         <PrimeReactProvider>
             <div className="card flex flex-column w-max-screen h-full">
-                {/* {(locations && locations.length > 0) ? 
-                    <h1>{locations[0].location_name}</h1>: <p>{`Not found`}</p>} */}
-                <TopPanel /> 
+                <TopPanel />
                 <ShiftStatusPanel/>
                 <GameStatusPanel/>
             </div>

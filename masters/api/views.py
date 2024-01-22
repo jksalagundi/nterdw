@@ -14,7 +14,6 @@ def get_locations_api(request):
         return Response(status=400, data={'status': f'Failed due to this exception {str(ex)}'})
 
 
-
 @api_view(['GET', ])
 def get_games(request):
     try:

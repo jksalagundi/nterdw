@@ -5,7 +5,8 @@ import {InputText} from "primereact/inputtext";
 import {Dialog} from "primereact/dialog";
 import {Button} from "primereact/button";
 import {Editor} from "primereact/editor";
-import {updateDetails} from "../redux/reducers/formSlice";
+import {updateDetails, updateNotes} from "../redux/reducers/formSlice";
+import { ButtonBar } from "./components/ButtonBar";
 
 const GameStatusForm = ({game}) => {
     const dispatch = useDispatch();
@@ -14,7 +15,7 @@ const GameStatusForm = ({game}) => {
     const [details, setDetails] = useState('');
     return (
         <div className="flex flex-row p-1 gap-1" key={`${game.id}`}>
-            <p className="w-2 notes-right notes-secondary notes-md pr-3">{game.name}</p>
+            <p className="w-2 text-right text-secondary text-md pr-3">{game.name}</p>
             <div className="w-auto">
                 <SelectButton options={gameStatus}
                               className="w-full"
@@ -56,6 +57,12 @@ export const GameStatusPanel = () => {
     const gameOptions = filterGames().map((game, index) => {
         return <GameStatusForm game={game} index={index} key={index}/>
     });
+
+    const handleNotesChanges = (value) => {
+        setNotes(value);
+        dispatch(updateNotes(value));
+    }
+
     return (
         <div className="card w-full flex flex-column my-1 mx-3 px-3 py-1 ">
             {gameOptions}
@@ -70,14 +77,13 @@ export const GameStatusPanel = () => {
                     style={{width: '75vw'}}
                     onHide={() => setVisible(false)}
                     draggable={false} resizable={false}>
+
                 <div className="card flex flex-column gap-2">
                     <Editor value={notes}
-                            onTextChange={(e) => setNotes(e.htmlValue)}
+                            onTextChange={(e) => handleNotesChanges(e.htmlValue)}
                             style={{height: '320px'}}/>
-                    <div className="flex flex-row justify-content-center gap-2 mt-3 py-3">
-                        <Button label="Submit"/>
-                        <Button label="Cancel"/>
-                    </div>
+                 
+                    <ButtonBar/>
                 </div>
             </Dialog>
         </div>

@@ -14,7 +14,8 @@ export const TopPanel = (setLoc) => {
         return {name: item.location_name, label: item.location_name.toUpperCase(), id: item.id}
     });
     return (
-        <div className='flex flex-row justify-content-center mx-4 my-2 px-2 py-2 h-auto border-bottom-1'>
+        <div className='flex flex-row justify-content-center mx-4 my-2 px-2 py-2 border-bottom-1' 
+             style={{height: "90px"}}>
             <div className="w-4 flex flex-row justify-content-start gap-2">
                 <Button icon="pi pi-bars" size="small"
                     tooltip="Archive" tooltipOptions={{position: "top"}}/>
@@ -28,11 +29,15 @@ export const TopPanel = (setLoc) => {
                     placeholder="Select Location"
                     tooltip="Select Location"/>
             </div>
-            <div className="w-4 flex flex-row justify-content-center" style={{height: `20px`}}>
-                <p className="w-full text-3xl text-primary text-center font-light mt-2">EOD Reporting</p>
+            <div className="w-4 flex flex-row justify-content-center">
+                <p className="w-full text-4xl text-primary text-center font-bold mt-2" 
+                    style={{letterSpacing: `-1px`}}>
+                    EOD Reporting
+                </p>
             </div>
             <div className="w-4 flex flex-row justify-end">
-                <p className="w-full text-lg font-light text-secondary text-right mt-3">
+                <p className="w-full text-lg font-light text-secondary text-right mt-3" 
+                    style={{letterSpacing: `-1px`}}>
                     {`${new Date().toLocaleString()}`}
                 </p>
             </div>

@@ -16,10 +16,12 @@ def end_of_day_report_list(request):
         return Response(status=200, data=serializer.data)
     elif request.method == 'POST':
         data = JSONParser().parse(request.body)
-        serializer = EndOfDayReportSerializer(data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(status=status.HTTP_207_MULTI_STATUS, data=serializer.data)
-        else:
-            return Response(status=status.HTTP_400_BAD_REQUEST, data=serializer.errors)
+        print("We will be posting this..")
+        print(data)
+        # serializer = EndOfDayReportSerializer(data=data)
+        # if serializer.is_valid():
+        #     serializer.save()
+        #     return Response(status=status.HTTP_207_MULTI_STATUS, data=serializer.data)
+        # else:
+        #     return Response(status=status.HTTP_400_BAD_REQUEST, data=serializer.errors)
 

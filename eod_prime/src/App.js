@@ -7,18 +7,16 @@ import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import { ShiftStatusPanel } from "./panels/ShiftStatusPanel";
 import { GameStatusPanel } from "./panels/GameStatusPanel";
-import {useSelector, useDispatch} from "react-redux";
+import {useDispatch} from "react-redux";
 import {fetchMasters} from "./redux/reducers/mastersSlice";
-// import {fetchEODReports} from "./redux/reducers/eodReportSlice";
+import { fetchEodData } from "./redux/reducers/eodSlice";
 
 export const App = () => {
     const dispatch = useDispatch();
-    const mastersLoading = useSelector( state => state.masters.status);
-    const reportsLoading = useSelector(state => state.eod.status);
     useEffect(()=>{
-        dispatch(fetchMasters())
-        // dispatch(fetchEODReports())
-    },[mastersLoading, reportsLoading]);
+        dispatch(fetchMasters());
+        dispatch(fetchEodData());
+    },[]);
     return(
         <PrimeReactProvider>
             <div className="card flex flex-column w-max-screen h-full">

@@ -83,7 +83,7 @@ export const GameStatusPanel = () => {
                             onTextChange={(e) => handleNotesChanges(e.htmlValue)}
                             style={{height: '320px'}}/>
                  
-                    <ButtonBar/>
+                    <ButtonBar setVisibleFlag={setVisible}/>
                 </div>
             </Dialog>
         </div>

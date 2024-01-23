@@ -5,9 +5,11 @@ from rest_framework.serializers import ModelSerializer
 class EndOfDayReportSerializer(ModelSerializer):
     class Meta:
         model = EndOfDayReport
-        fields = ['id', 'location', 'report_date', 'shift', 'traffic_status',
+        fields = ['id', 'location', 'report_date', 'shift', 'shift_lead',
+                  'traffic_status',
                   'location_cleaned_status', 'games_sold', 'walkins_declined',
-                  'cash_in_box', 'inventory_reorder', 'eod_notes', 'created_date', 'modified_date']
+                  'cash_in_box', 'inventory_reorder', 'eod_notes',
+                  'created_date', 'modified_date']
 
     def create(self, validated_date):
         return EndOfDayReport.objects.create(**validated_date)

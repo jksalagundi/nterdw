@@ -4,13 +4,13 @@ const initialState = {
     selectedLocation: null,
     eod_report_header : {
         shift: "AM",
-        traffic_status: "",
+        traffic_status: "Light",
         shift_lead: "",
-        location_cleaned_status: "",
+        location_cleaned_status: "Not Cleaned",
         games_sold: 0,
         cash_in_box: 0,
         walkins_declined: 0,
-        inventory_reorder: ''
+        inventory_reorder: 'No Reorder'
     },
     eod_report_details: [],
     eod_notes: null

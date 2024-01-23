@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.template import loader
 from django.shortcuts import render
 from datetime import datetime
@@ -32,3 +32,6 @@ def eod_report_ui(request, location):
         print("Exception occurred .. No template found ... ", ex.__str__())
 
 
+def eod_test(request):
+    print("Getting post request ... ", request)
+    return JsonResponse(safe=False, data={'status': 'will be working'}, status=200)

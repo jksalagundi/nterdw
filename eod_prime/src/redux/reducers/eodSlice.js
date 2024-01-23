@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+
 const URL = "http://localhost:8000";
 const header = {
             "Content-Type": "application/json",
@@ -14,17 +15,50 @@ export const fetchEodData = createAsyncThunk("eod/fetchEodData", async ()=>{
     return response.data;
 });
 
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
 export const postEodData= createAsyncThunk("eod/postEodData", 
     async (formData)=>{
-        console.log("Got this data to post ... ", formData);
+        axios.defaults.withCredentials = true;
+        axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+        axios.defaults.xsrfCookieName = getCookie('csrftoken');
+        console.log("Got this data to post ... ", getCookie('csrftoken'));
         let data = await axios.post(`${URL}/eod/api/list`, 
-                            formData, 
+                            JSON.stringify(formData), 
                             { 
-                                header: { "Content-Type": "application/json", 
-                                          "Access-Control-Allow-Origin": "*" 
-                                        }, 
+                                header: { 
+                                    "Content-Type": "application/json", 
+                                    "Access-Control-Allow-Origin": "*" ,
+                                    // "X-CSRFToken": getCookie('csrftoken'),
+                                }, 
                             });
         return data;
+
+        // const response = await fetch('http://localhost:8000/eod/api/list',
+        //     {
+        //         method: 'POST',
+        //         body: JSON.stringify(formData),
+        //         headers: {
+        //             'Content-type': 'application/json; charset=UTF-8',
+        //             'Access-Control-Allow-Origin': "*",
+        //             "X-CSRFToken": getCookie('csrftoken'),
+        //         }
+        //     });
+        // return response.json();
 });
 
 const initialState = {

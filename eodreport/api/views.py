@@ -6,10 +6,11 @@ from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 
 
-@csrf_exempt
+# @csrf_exempt
 @api_view(['GET', 'POST'])
 def end_of_day_report_list(request):
     if request.method == 'GET':
+        print(request.body)
         eod_list = EndOfDayReport.objects.all()
         serializer = EndOfDayReportSerializer(eod_list, many=True)
         # return JsonResponse(status=200, safe=False, data=serializer.data)

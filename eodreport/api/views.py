@@ -6,7 +6,7 @@ from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 
 
-# @csrf_exempt
+@csrf_exempt
 @api_view(['GET', 'POST'])
 def end_of_day_report_list(request):
     if request.method == 'GET':
@@ -16,16 +16,16 @@ def end_of_day_report_list(request):
         # return JsonResponse(status=200, safe=False, data=serializer.data)
         return Response(status=200, data=serializer.data)
     elif request.method == 'POST':
-        # print(request.body)
+        print("Getting the post request... ")
+        print(request)
         try:
-            data = JSONParser().parse(request)
-            # print(data)
-            serializer = EndOfDayReportSerializer(data=data)
+            serializer = EndOfDayReportSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
                 print("Saved successfully", serializer.data['id'])
                 return Response(status=status.HTTP_207_MULTI_STATUS, data=serializer.data)
             else:
+                print("Failed as there are errors in serialization", serializer.errors)
                 return Response(status=status.HTTP_400_BAD_REQUEST, data=serializer.errors)
         except Exception as ex:
             print(f"Exception occurred while parsing {str(ex)}")

@@ -27,6 +27,7 @@ urlpatterns = [
     path("analytics/", front, name='front'),
     path("", eod_report_ui, name="eod_ui"),
     path("login/", sign_in, name='sign_in'),
+    path("todos/", include("todos.urls")),
 ]
 urlpatterns += staticfiles_urlpatterns()
 

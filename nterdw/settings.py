@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # 'masters.apps.MastersConfig',
     'masters',
     'rest_framework',
+    'todos'
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,7 @@ ROOT_URLCONF = 'nterdw.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build'), 
+        'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build'),
                  os.path.join(BASE_DIR, 'eod_prime', 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -89,26 +90,26 @@ WSGI_APPLICATION = 'nterdw.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'nterdb',
-#         'USER': 'nteradmin',
-#         'PASSWORD': 'nter2$2$',
-#         'HOST': 'localhost',
-#     }
-# }
-
-# DB setup on local linux box
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'nterdb',
-        'USER': 'jksalagundi',
-        'PASSWORD': 'Longmire2024',
+        'USER': 'nteradmin',
+        'PASSWORD': 'nter2$2$',
         'HOST': 'localhost',
     }
 }
+
+# # DB setup on local linux box
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'nterdb',
+#         'USER': 'jksalagundi',
+#         'PASSWORD': 'Longmire2024',
+#         'HOST': 'localhost',
+#     }
+# }
 
 
 # Password validation

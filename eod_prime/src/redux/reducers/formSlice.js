@@ -23,7 +23,7 @@ const formSlice = createSlice({
         initiateGameStatus: (state, action) => {
             if (action.payload && action.payload.games) {
                 let entries = [];
-                action.payload.games.map((game) => {
+                action.payload.games.forEach((game) => {
                     if (game.location === action.payload.selectedLocation.id)
                         entries.push({id: game.id, status: 'Good', details: null, location: game.location});
                 })

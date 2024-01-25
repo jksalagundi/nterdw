@@ -1,30 +1,15 @@
-import React from "react"
+import React, {useRef} from "react"
 import { Button } from "primereact/button"
 import { useSelector, useDispatch } from "react-redux"
 import { postEodData } from "../../redux/reducers/eodSlice"
+import { Toast } from "primereact/toast";
 
 export const ButtonBar = ({setVisibleFlag}) => {
     const dispatch = useDispatch();
     const fdata = useSelector(state => state.form);
+    const toast = useRef(null);
+    const status = useSelector(state => state.eod.status);
 
-    /**
-     *   {
-        "id": 1,
-        "location": 9,
-        "report_date": "2024-01-21T11:39:52.823143-06:00",
-        "shift": "AM",
-        "shift_lead": "Shift Lead",
-        "traffic_status": "Light",
-        "location_cleaned_status": "Not cleaned",
-        "games_sold": 0,
-        "walkins_declined": 0,
-        "cash_in_box": 300,
-        "inventory_reorder": "Toilet Paper",
-        "eod_notes": "Everything was hunky dory",
-        "created_date": "2024-01-21T11:39:52.823170-06:00",
-        "modified_date": null
-    },
-     */
     const createDataToPost = () => {
         let data = {};
         if (fdata){
@@ -43,18 +28,22 @@ export const ButtonBar = ({setVisibleFlag}) => {
 
     const handleSubmit = () => {
         const formData = createDataToPost();
-        console.log("Will be posting this data ... ", formData);
         dispatch(postEodData(formData));
         setVisibleFlag(false);
+        toast.current.show({severity: 'info', summary: "Success", detail: "Successfully posted EOD Report"})
     }
-
+    // console.log("Status & Toast ", status, toast);
+    // if (status && status === 'Posted' && toast){
+    //     toast.current.show({severity: 'info', summary: "Success", detail: "Successfully posted EOD Report"})
+    // }
     return (
         <div className="flex flex-row justify-content-center gap-3 mt-3 py-3">
-            <Button 
-                label="Submit" icon="pi pi-save" 
+            <Toast ref={toast}/>
+            <Button
+                label="Submit" icon="pi pi-save"
                 onClick={handleSubmit}
                 severity="success" rounded/>
-            <Button label="Cancel" icon="pi pi-times" 
+            <Button label="Cancel" icon="pi pi-times"
                 onClick={()=>setVisibleFlag(false)}
                 severity="warning" rounded/>
         </div>

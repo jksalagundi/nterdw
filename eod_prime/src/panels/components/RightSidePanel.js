@@ -62,12 +62,15 @@ export const RightSidePanel = () => {
                     <label htmlFor="walkinsDeclined">Walkins Declined</label>
                 </span>
             </div>
-            <div className="card flex flex-row justify-content-start px-4 py-2 mt-3">
-                <span className="p-float-label">
+            <div className="card flex flex-row justify-content-start px-4 py-2 mt-4">
+                <span className="p-float-label w-11">
                     <InputText id="reorder"
                         key="shift_lead_input"
                         autoFocus="autoFocus"
                         value={reorder}
+                        tooltip="Anything to be requested for re-ordering ?"
+                        tooltipOptions={{position: "top"}}
+                        className="w-full"
                         onChange={(e)=> {
                             setReorder(e.target.value)
                             dispatch(updateHeaderRight({

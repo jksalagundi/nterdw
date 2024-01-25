@@ -29,6 +29,8 @@ export const LeftSidePanel = () => {
                 <span className="p-float-label">
                     <InputText id="shiftlead"
                         key="shift_lead_input"
+                        tooltip="Name of the shift lead"
+                        tooltipOptions={{position: "left"}}
                         autoFocus="autoFocus"
                         value={shiftLead}
                         onChange={(e)=> {
@@ -44,6 +46,8 @@ export const LeftSidePanel = () => {
                 <span className="p-float-label">
                     <InputNumber id="cashBox" value={cashBox}
                             className="p-inputtext-normal"
+                            tooltip="How much cash that is the box?"
+                            tooltipOptions={{position: "left"}}
                                onValueChange={(e) => {
                                    setCashBox(e.target.value)
                                    dispatch(updateHeaderLeft({ shift: shift, shift_lead: shiftLead,
@@ -56,6 +60,8 @@ export const LeftSidePanel = () => {
                 <span className="p-float-label">
                     <InputNumber id="gamesSold" value={gameSold}
                             className="p-inputtext-normal"
+                            tooltip="How many games did we book?"
+                            tooltipOptions={{position: "left"}}
                                onValueChange={(e) => {
                                    setGameSold(e.target.value)
                                    dispatch(updateHeaderLeft({ shift: shift, shift_lead: shiftLead,

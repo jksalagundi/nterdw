@@ -10,19 +10,22 @@ from django.views.decorators.csrf import csrf_exempt
 @api_view(['GET', 'POST'])
 def end_of_day_report_list(request):
     if request.method == 'GET':
-        print(request.body)
+        # print(request.body)
         eod_list = EndOfDayReport.objects.all()
         serializer = EndOfDayReportSerializer(eod_list, many=True)
         # return JsonResponse(status=200, safe=False, data=serializer.data)
         return Response(status=200, data=serializer.data)
     elif request.method == 'POST':
-        print("Getting the post request... ")
-        print(request)
+        # print("Getting the post request... ")
+        # print(request)
         try:
             serializer = EndOfDayReportSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
                 print("Saved successfully", serializer.data['id'])
+
+                eod_list = EndOfDayReport.objects.all()
+                serializer = EndOfDayReportSerializer(eod_list, many=True)
                 return Response(status=status.HTTP_207_MULTI_STATUS, data=serializer.data)
             else:
                 print("Failed as there are errors in serialization", serializer.errors)

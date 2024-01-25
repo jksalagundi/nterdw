@@ -18,8 +18,6 @@ export const postEodData= createAsyncThunk("eod/postEodData",
         axios.defaults.withCredentials = true;
         axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
         axios.defaults.xsrfCookieName = getCookie('csrftoken');
-        // let form = buildFormData(formData);
-
         const response = await axios({
                 method: 'post',
                 url: 'http://localhost:8000/eod/api/list',
@@ -58,7 +56,7 @@ const eodSlice = createSlice({
             state.status = "Posted"
             state.eod_reports = action.payload;
         }).addCase(postEodData.rejected, (state, action) => {
-            state.error = action.payload;
+            state.error = action.error;
             state.status = "Failed";
             console.log("Form Posting failed", action.payload);
         })

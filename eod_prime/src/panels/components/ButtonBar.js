@@ -2,7 +2,6 @@ import React, {useRef} from "react"
 import { Button } from "primereact/button"
 import { useSelector, useDispatch } from "react-redux"
 import { postEodData } from "../../redux/reducers/eodSlice"
-import { Toast } from "primereact/toast";
 
 const __build_form_data = (fdata) => {
     if (!fdata) return new FormData();
@@ -22,7 +21,6 @@ const __build_form_data = (fdata) => {
 export const ButtonBar = ({setVisibleFlag}) => {
     const dispatch = useDispatch();
     const fdata = useSelector(state => state.form);
-    const toast = useRef(null);
     const status = useSelector(state => state.eod.status);
 
     const handleSubmit = () => {
@@ -36,8 +34,7 @@ export const ButtonBar = ({setVisibleFlag}) => {
     }
 
     return (
-        <div className="flex flex-row justify-content-center gap-3 mt-3 py-3">
-            <Toast ref={toast}/>
+        <div className="flex flex-row justify-content-center gap-3 mt-1 py-1">
             <Button
                 label="Submit" icon="pi pi-save"
                 onClick={handleSubmit}
@@ -45,6 +42,7 @@ export const ButtonBar = ({setVisibleFlag}) => {
             <Button label="Cancel" icon="pi pi-times"
                 onClick={()=>setVisibleFlag(false)}
                 severity="warning" rounded/>
+                
         </div>
     )
 }

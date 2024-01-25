@@ -17,6 +17,7 @@ class EndOfDayReport(models.Model):
     cash_in_box = models.IntegerField(verbose_name='Cash In the Box', default=0)
     inventory_reorder = models.CharField(max_length=200, default='No Reorder')
     eod_notes = models.TextField(null=False, default='EOD Notes TBD')
+    game_status = models.JSONField(null=False, default=dict)
     created_date = models.DateTimeField(auto_now=True)
     modified_date = models.DateTimeField(null=True)
 

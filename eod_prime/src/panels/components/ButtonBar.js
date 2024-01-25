@@ -15,6 +15,17 @@ const __build_form_data = (fdata) => {
     form.append("walkins_declined",fdata.eod_report_header.walkins_declined);
     form.append("inventory_reorder",fdata.eod_report_header.inventory_reorder);
     form.append("eod_notes", fdata.eod_notes);
+    if (fdata.eod_report_details && fdata.eod_report_details.length > 0){
+        let details = [];
+        fdata.eod_report_details.map((item) => {
+            details.push({
+                game_id: item.id,
+                status: item.status,
+                details: item.details
+            });
+        })
+        form.append("game_status", JSON.stringify(details));
+    }
     return form;
 }
 

@@ -8,7 +8,7 @@ class EndOfDayReportSerializer(ModelSerializer):
         fields = ['id', 'location', 'report_date', 'shift', 'shift_lead',
                   'traffic_status',
                   'location_cleaned_status', 'games_sold', 'walkins_declined',
-                  'cash_in_box', 'inventory_reorder', 'eod_notes',
+                  'cash_in_box', 'inventory_reorder', 'eod_notes', 'game_status',
                   'created_date', 'modified_date']
 
     def create(self, validated_date):
@@ -27,6 +27,7 @@ class EndOfDayReportSerializer(ModelSerializer):
         instance.inventory_reorder = validated_data.get('inventory_reorder', instance.inventory_reorder)
         instance.eod_notes = validated_data.get('eod_notes', instance.eod_notes)
         instance.modified_date = validated_data.get('modified_date', instance.modified_date)
+        instance.game_status = validated_data.get('game_status', instance.game_status)
         instance.save()
         return instance
 

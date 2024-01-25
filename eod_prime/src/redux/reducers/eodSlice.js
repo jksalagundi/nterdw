@@ -13,31 +13,17 @@ export const fetchEodData = createAsyncThunk("eod/fetchEodData", async ()=>{
     return response.data;
 });
 
-const buildFormData = (data) => {
-    let form = new FormData();
-    form.append("location", data.location);
-    form.append("shift", data.shift.substring(0,2));
-    form.append("shift_lead", data.shift_lead);
-    form.append("games_sold", data.games_sold);
-    form.append("location_cleaned_status", data.location_cleaned_status);
-    form.append("traffic_status", data.traffic_status);
-    form.append("walkins_declined", data.walkins_declined);
-    form.append("eod_notes", data.eod_notes);
-    form.append("inventory_reorder", data.inventory_reorder);
-    return form;
-}
-
 export const postEodData= createAsyncThunk("eod/postEodData",
     async (formData)=>{
         axios.defaults.withCredentials = true;
         axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
         axios.defaults.xsrfCookieName = getCookie('csrftoken');
-        let form = buildFormData(formData);
+        // let form = buildFormData(formData);
 
         const response = await axios({
                 method: 'post',
                 url: 'http://localhost:8000/eod/api/list',
-                data: form,
+                data: formData,
                 headers: { "Content-Type": "multipart/form-data"},
             });
         return response.data;

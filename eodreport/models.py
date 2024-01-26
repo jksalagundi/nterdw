@@ -22,16 +22,7 @@ class EndOfDayReport(models.Model):
     modified_date = models.DateTimeField(null=True)
 
 
-class EODGameStatus(models.Model):
-    """
-    End of day Game Status
-    """
-    eod_report = models.ForeignKey(EndOfDayReport, on_delete=models.CASCADE)
-    game = models.ForeignKey(Games, on_delete=models.CASCADE)
-    # Three choices --> Good / Functional / Broken
-    status = models.CharField(max_length=20, null=False, default="Good")
-    notes = models.TextField(null=True)
-
-
+class EODConfig(models.Model):
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
 

@@ -198,3 +198,12 @@ CORS_ALLOW_CREDENTIALS = True
 #     'http://127.0.0.1',
 #     'http://localhost'
 # ]
+
+EMAIL_PASSWORD = "fiza xvbd mpim fook"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'jksalagundi@gmail.com'
+EMAIL_HOST_PASSWORD= "fiza xvbd mpim fook"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'default from email'

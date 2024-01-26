@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Button } from "primereact/button";
 import { Dropdown } from "primereact/dropdown";
 import {changeLocation, initiateGameStatus} from "../redux/reducers/formSlice";
-// import { fetchMasters } from "../redux/reducers/mastersSlice";
+import { today_date } from "../redux/reducers/util";
+
 
 export const TopPanel = (setLoc) => {
     const selectedLocation = useSelector((state) => state.form.selectedLocation);
@@ -31,13 +32,13 @@ export const TopPanel = (setLoc) => {
             <div className="w-4 flex flex-row justify-content-center">
                 <p className="w-full text-2xl text-primary text-center font-bold mt-2"
                     style={{letterSpacing: `-1px`}}>
-                    EOD Reporting
+                    Shift End Reporting
                 </p>
             </div>
             <div className="w-4 flex flex-row justify-end">
                 <p className="w-full text-lg font-light text-secondary text-right mt-3"
-                    style={{letterSpacing: `-1px`}}>
-                    {`${new Date().toLocaleString()}`}
+                    style={{letterSpacing: `-0.2px`}}>
+                    {today_date()}
                 </p>
             </div>
         </div>

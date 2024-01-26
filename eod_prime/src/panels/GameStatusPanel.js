@@ -5,7 +5,7 @@ import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
-// import { Editor } from "primereact/editor";
+import { Editor } from "primereact/editor";
 import { updateDetails, updateNotes } from "../redux/reducers/formSlice";
 import { ButtonBar } from "./components/ButtonBar";
 import { Message } from "primereact/message"
@@ -31,8 +31,7 @@ const GameStatusForm = ({ game }) => {
                 <InputText id="statusDetails"
                     className="w-full" key="shift_lead_input"
                     autoFocus="autoFocus" value={details}
-                    tooltip={"Description of any damage ?"} tooltipOptions={{ position: "top" }}
-                    placeholder="Details of any challenge with the game"
+                    tooltip={"Description of any damage or challenges with the game?"} tooltipOptions={{ position: "top" }}
                     onChange={(e) => {
                         setDetails(e.target.value);
                         dispatch(updateDetails({ id: game.id, status, details: e.target.value }))
@@ -84,14 +83,14 @@ export const GameStatusPanel = () => {
                         draggable={false} resizable={false}>
 
                         <div className="card flex flex-column gap-2">
-                            {/* <Editor value={notes}
+                            <Editor value={notes}
                                 onTextChange={(e) => handleNotesChanges(e.htmlValue)}
-                                style={{ height: '320px' }} /> */}
-                            <InputTextarea 
+                                style={{ height: '320px' }} />
+                            {/* <InputTextarea 
                                 value={notes} onChange={(e) => handleNotesChanges(e.target.value)}
                                 style={{height: `320px`}}
                                 row={30} cols={100}
-                            />
+                            /> */}
                             <ButtonBar setVisibleFlag={setVisible} />
                         </div>
                     </Dialog>

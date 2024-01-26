@@ -13,3 +13,10 @@ export const getCookie = (name) => {
     }
     return cookieValue;
 }
+
+export const today_date = () => {
+    const formatter = new Intl.DateTimeFormat('en-Us', {
+        dateStyle: "full", timeStyle: "short"
+    });
+    return formatter.format(new Date());
+}

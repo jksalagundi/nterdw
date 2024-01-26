@@ -6,15 +6,15 @@ import {updateHeaderRight} from "../../redux/reducers/formSlice";
 import {useDispatch} from "react-redux";
 
 export const RightSidePanel = () => {
-    const options = ["Light","Busy","Very Busy"];
+    const options = ["No Games", "Light","Busy","Very Busy"];
     const cleaned = [ "Not Cleaned", "Facility Cleaned","Facility Deep Cleaned"];
-    const [shift, setShift] = useState(options[0]);
-    const [facilityCleaned, setFacilityCleaned] = useState(cleaned[0]);
-    const [reorder, setReorder] = useState('');
-    const [walkinsDeclined, setWalkinsDeclined] = useState(0);
+    const [shift, setShift] = useState(null);
+    const [facilityCleaned, setFacilityCleaned] = useState(null);
+    const [reorder, setReorder] = useState(null);
+    const [walkinsDeclined, setWalkinsDeclined] = useState(null);
     const dispatch = useDispatch();
     return (
-        <div className="card w-7 flex flex-column m-1">
+        <div className="card w-6 flex flex-column m-1">
             <div className="card flex flex-row justify-content-start px-4 py-2">
                 <SelectButton
                     options={options}
@@ -30,7 +30,7 @@ export const RightSidePanel = () => {
                         }));
                     }} />
             </div>
-            <div className="card flex flex-row justify-content-start px-4 py-2 mt-1">
+            <div className="card flex flex-row justify-content-start px-4 py-2 ">
                 <SelectButton
                     options={cleaned}
                     value={facilityCleaned}
@@ -45,10 +45,10 @@ export const RightSidePanel = () => {
                         }));
                     }} />
             </div>
-            <div className="card flex flex-row justify-content-start px-4 py-2 mt-4">
-                <span className="p-float-label">
+            <div className="card flex flex-row justify-content-start px-4 py-2 w-8">
                     <InputNumber id="walkinsDeclined" value={walkinsDeclined}
-                            className="p-inputtext-normal"
+                            className="p-inputtext-normal w-full"
+                            placeholder="Walkins declined"
                             tooltip="How many customer walkins were declined ?"
                                onValueChange={(e) => {
                                    setWalkinsDeclined(e.target.value)
@@ -59,15 +59,13 @@ export const RightSidePanel = () => {
                                        inventory_reorder: reorder
                                    }));
                                }} />
-                    <label htmlFor="walkinsDeclined">Walkins Declined</label>
-                </span>
             </div>
-            <div className="card flex flex-row justify-content-start px-4 py-2 mt-4">
-                <span className="p-float-label w-11">
+            <div className="card flex flex-row justify-content-start px-4 py-2 w-8">
                     <InputText id="reorder"
                         key="shift_lead_input"
                         autoFocus="autoFocus"
                         value={reorder}
+                        placeholder="Re-order inventory"
                         tooltip="Anything to be requested for re-ordering ?"
                         tooltipOptions={{position: "top"}}
                         className="w-full"
@@ -80,8 +78,6 @@ export const RightSidePanel = () => {
                                 inventory_reorder: e.target.value,
                             }));
                         }}/>
-                    <label htmlFor="reorder">Inventory Reorder</label>
-                </span>
             </div>
         </div>
     )

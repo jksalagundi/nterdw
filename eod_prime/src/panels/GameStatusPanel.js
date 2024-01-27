@@ -48,6 +48,7 @@ export const GameStatusPanel = () => {
     const [visible, setVisible] = useState(false);
     const [notes, setNotes] = useState("");
     const formStatus = useSelector(state => state.eod.status);
+    const formLocked = useSelector(state => state.form.lock_form);
 
     const filterGames = () => {
         if (games && games.length > 0 && selectedLocation) {
@@ -66,7 +67,7 @@ export const GameStatusPanel = () => {
     }
 
     const displayForm = () => {
-        if (formStatus !== "Posted") {
+        if (formStatus !== "Posted" && !formLocked) {
             return (
                 <React.Fragment>
                     {gameOptions}
@@ -96,12 +97,17 @@ export const GameStatusPanel = () => {
                     </Dialog>
                 </React.Fragment>
             )
-        } else {
+        } else if (formStatus === "Posted" && !formLocked) {
             return (
                 <Message className="m-1 p-2" 
                          text={`EOD Report for ${selectedLocation.name} has been successfully submitted`}
                          severity="success"/>
             )
+        } else {
+            return (
+                <Message className="m-1 p-2" 
+                         text={`You have opted not resend the report for ${selectedLocation.name}. You can reload the form to clear this.`}
+                         severity="warn"/>);
         }
     }
 

@@ -3,17 +3,20 @@ import _ from "lodash";
 const initialState = {
     selectedLocation: null,
     eod_report_header : {
-        shift: "AM",
-        traffic_status: "Light",
+        shift: 'PM',
+        traffic_status: null,
         shift_lead: "",
-        location_cleaned_status: "Not Cleaned",
+        location_cleaned_status: null,
         games_sold: 0,
         cash_in_box: 0,
         walkins_declined: 0,
-        inventory_reorder: 'No Reorder'
+        inventory_reorder: '',
     },
     eod_report_details: [],
-    eod_notes: null
+    eod_notes: null,
+    resend_status: false,
+    lock_form: false,
+    existing_form_id: null,
 }
 
 const formSlice = createSlice({
@@ -32,6 +35,15 @@ const formSlice = createSlice({
         },
         changeLocation : (state, action) => {
             state.selectedLocation = action.payload;
+            state.lock_form = false;
+        },
+        changeResendStatus: (state, action) => {
+            const { resend_status, existing_form_id} = action.payload;
+            state.resend_status = resend_status;
+            state.existing_form_id = existing_form_id;
+            if (action.payload === false){
+                state.lock_form = true;
+            }
         },
         updateHeaderLeft : (state, action) => {
             let payload = action.payload;
@@ -62,5 +74,5 @@ const formSlice = createSlice({
 });
 
 export const {changeLocation, updateNotes, updateHeaderLeft, updateHeaderRight,
-                updateDetails, initiateGameStatus} = formSlice.actions;
+                updateDetails, initiateGameStatus, changeResendStatus} = formSlice.actions;
 export default formSlice.reducer;

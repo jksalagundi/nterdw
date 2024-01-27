@@ -3,7 +3,8 @@ import { InputText } from "primereact/inputtext";
 import { InputNumber } from "primereact/inputnumber";
 import { SelectButton } from "primereact/selectbutton";
 import { useDispatch, useSelector } from "react-redux";
-import { updateHeaderLeft } from "../../redux/reducers/formSlice";
+import { updateHeaderLeft, changeResendStatus } from "../../redux/reducers/formSlice";
+import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
 
 export const LeftSidePanel = () => {
     const options = ["AM Shift", "PM Shift"];
@@ -13,29 +14,41 @@ export const LeftSidePanel = () => {
     const [gameSold, setGameSold] = useState(null);
     const dispatch = useDispatch();
     const eod_reports = useSelector(state => state.eod.eod_reports);
+    const selected_location = useSelector(state => state.form.selectedLocation);
+
     const checkForDuplicateRecord = (shift) => {
-        let found = false;
         eod_reports.forEach((report) => {
             const d = report.report_date;
             let dc = {
                 year: Number(d.substring(0, 4)), month: Number(d.substring(5, 7)),
                 day: Number(d.substring(8, 10))
             };
-            // console.log("Report date ... ", dc);
             let today = new Date();
-            found = (dc.year === today.getFullYear() && dc.day === today.getDate()
-                && dc.month == today.getMonth() + 1);
-            // console.log("Today's date ... ", today.getFullYear(), today.getDate(), today.getMonth());
-            console.log("Found after date check", found);
-            console.log(" Shifts ", shift, report.shift);
-            found = found && (shift.substring(0, 2) === report.shift)
-            console.log("Report Date, Todays Date, Found, Shift ", dc, (new Date()), found, shift);
+            let found = (dc.year === today.getFullYear() && dc.day === today.getDate()
+                && dc.month === today.getMonth() + 1);
+            found = found && (shift.substring(0, 2) === report.shift) && (report.location === selected_location.id);
+            if (found) {
+                const message = `A report for ${selected_location.label} has been filed for today's ${shift}. You want to resend ?`
+                confirmDialog({
+                    message: message,
+                    header: 'Confirmation',
+                    icon: 'pi pi-exclamation-triangle',
+                    defaultFocus: 'reject',
+                    accept: () => {
+                        dispatch(changeResendStatus({ resend_status: true, existing_form_id: report.id }));
+                    },
+                    reject: () => {
+                        dispatch(changeResendStatus({ resend_status: false, existing_form_id: report.id }));
+                    }
+                });
+            }
         });
-        return found;
     }
+
 
     return (
         <div className="card w-6 flex flex-column ml-5 ">
+            <ConfirmDialog />
             <div className="card flex flex-row justify-content-start px-4 py-2 ">
                 <SelectButton
                     options={options}
@@ -43,7 +56,7 @@ export const LeftSidePanel = () => {
                     tooltip="Which shift are you reporting ?"
                     onChange={(e) => {
                         setShift(e.value);
-                        const found = checkForDuplicateRecord(e.value);
+                        checkForDuplicateRecord(e.value);
                         dispatch(updateHeaderLeft({
                             shift: e.value, shift_lead: shiftLead,
                             cash_in_box: cashBox, games_sold: gameSold

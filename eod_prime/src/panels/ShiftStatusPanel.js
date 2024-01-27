@@ -8,6 +8,7 @@ export const ShiftStatusPanel = () => {
 
     const selectedLocation = useSelector(state => state.form.selectedLocation);
     const formStatus = useSelector(state => state.eod.status);
+    const formLocked = useSelector(state => state.form.lock_form);
 
     const showMessage = () => {
         return (
@@ -18,7 +19,7 @@ export const ShiftStatusPanel = () => {
     }
 
     const showPanels = () => {
-        if (formStatus !== "Posted") {
+        if (formStatus !== "Posted" && !formLocked) {
             return (
                 <div className="w-full flex flex-row">
                     <LeftSidePanel />

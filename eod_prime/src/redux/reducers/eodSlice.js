@@ -2,6 +2,11 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import {getCookie} from "./util";
 
+const initialState = {
+    status: null,
+    error: null,
+    eod_reports: []
+ }
 const URL = "http://localhost:8000";
 
 export const fetchEodData = createAsyncThunk("eod/fetchEodData", async ()=>{
@@ -28,11 +33,7 @@ export const postEodData= createAsyncThunk("eod/postEodData",
 
 });
 
-const initialState = {
-   status: null,
-   error: null,
-   eod_reports: []
-}
+
 
 const eodSlice = createSlice({
     name: 'eod',

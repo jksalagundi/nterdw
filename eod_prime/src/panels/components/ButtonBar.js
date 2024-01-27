@@ -26,6 +26,7 @@ const __build_form_data = (fdata) => {
         })
         form.append("game_status", JSON.stringify(details));
     }
+    console.log("Here is the updated form ... ", form);
     return form;
 }
 

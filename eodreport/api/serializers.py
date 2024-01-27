@@ -4,6 +4,7 @@ from rest_framework.serializers import ModelSerializer
 
 class EndOfDayReportSerializer(ModelSerializer):
     class Meta:
+        # depth = 1
         model = EndOfDayReport
         fields = ['id', 'location', 'report_date', 'shift', 'shift_lead',
                   'traffic_status',

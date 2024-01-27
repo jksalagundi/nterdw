@@ -6,7 +6,7 @@ import {changeLocation, initiateGameStatus} from "../redux/reducers/formSlice";
 import { today_date } from "../redux/reducers/util";
 
 
-export const TopPanel = (setLoc) => {
+export const TopPanel = ({showArchives}) => {
     const selectedLocation = useSelector((state) => state.form.selectedLocation);
     const locations = useSelector((state) => state.masters.locations);
     const games = useSelector((state) => state.masters.games);
@@ -17,8 +17,11 @@ export const TopPanel = (setLoc) => {
     return (
         <div className='flex flex-row justify-content-center mx-4 my-2 px-2 py-2 border-bottom-1 h-4rem'>
             <div className="w-4 flex flex-row justify-content-start gap-2">
-                <Button icon="pi pi-bars" size="small"
-                    tooltip="Archive" tooltipOptions={{position: "top"}}/>
+                <Button icon="pi pi-bars" 
+                    size="small"
+                    tooltip="Archive" 
+                    onClick={showArchives}
+                    tooltipOptions={{position: "top"}}/>
                 <Dropdown value={selectedLocation}
                     onChange={(e) => {
                         dispatch(changeLocation(e.value));

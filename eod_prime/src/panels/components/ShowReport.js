@@ -56,47 +56,46 @@ export const ShowReport = ({ active, setActive, report }) => {
                     <span className="text-lg text-center ">{report.shift_lead}</span>
                 </div>
                 <div className="card flex flex-row gap-4 w-full py-1 ">
-                    <div className="flex flex-row w-6 justify-content-end border-0">
+                    <div className="flex flex-row w-5 justify-content-end border-0">
                         <span className="text-lg  font-light pr-2">Traffic Status: </span>
                         {showTrafficStatus(report)}
                     </div>
-                    <div className="flex flex-row w-6 justify-content-start border-0">
+                    <div className="flex flex-row w-7 justify-content-start border-0">
                         <span className="text-lg font-light pr-2">Cleaniness: </span>
                         {showCleanlinessStatus(report)}
                     </div>
                 </div>
                 <div className="card flex flex-row gap-4 py-1 w-full">
-                    <div className="flex flex-row w-6 justify-content-end border-0">
+                    <div className="flex flex-row w-5 justify-content-end border-0">
                         <span className="text-lg font-light pr-2">Games Sold: </span>
                         <span className="text-lg ">{report.games_sold}</span>
                     </div>
-                    <div className="flex flex-row w-6 justify-content-start border-0">
+                    <div className="flex flex-row w-7 justify-content-start border-0">
                         <span className="text-lg font-light pr-2">Walkins Declined: </span>
                         <span className="text-lg ">{report.walkins_declined}</span>
                     </div>
                 </div>
                 <div className="card flex flex-row gap-4 py-1 w-full">
-                    <div className="flex flex-row w-6 justify-content-end border-0">
+                    <div className="flex flex-row w-5 justify-content-end border-0">
                         <span className="text-lg  font-light pr-2">Cash: </span>
                         <span className="text-lg ">{report.cash_in_box.toLocaleString()}</span>
                     </div>
-                    <div className="flex flex-row w-6 justify-content-start border-0">
-                        <span className="text-lg text-center font-light pr-2">Inventory Reorder: </span>
-                        <span className="text-lg text-center ">{report.inventory_reorder}</span>
+                    <div className="flex flex-row w-7 justify-content-start border-0">
+                        <span className="text-lg font-light pr-2">Inventory Reorder: </span>
+                        <span className="text-lg ">{report.inventory_reorder}</span>
                     </div>
                 </div>
                 <div className="card py-1">
                     <DataTable value={report.game_status} scrollable size="small"
-                        scrollHeight="150px" stripedRows showGridlines>
+                        scrollHeight="250px" stripedRows showGridlines>
                             <Column header="Game" body={formatGameId} style={{width: "20%"}}/>
                             <Column header="Status" style={{width: "10%"}} body={formatStatus}/>
                             <Column header="Details" field={"details"} style={{maxWidth: "70%"}}/>
                     </DataTable>
                 </div>
-                <div className="card py-3" style={{height: "200px"}}>
-                    <p className="text-md font-light" 
-                        dangerouslySetInnerHTML={{__html: report.eod_notes}}
-                        style={{lineHeight: "20px"}}>
+                <div className="card my-2" style={{height: "200px"}}>
+                    <p className="text-md font-light"  
+                        dangerouslySetInnerHTML={{__html: report.eod_notes}} >
                     </p>
                 </div>
             </Dialog>

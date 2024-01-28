@@ -8,14 +8,14 @@ export const showTrafficStatus = (report)=> {
             case "NO GAMES":
                 return 0;
             case "LIGHT":
-                return 1;
-            case "BUSY":
                 return 2;
+            case "BUSY":
+                return 4;
             case "VERY BUSY":
-                return 3;
+                return 5;
         }
     }
-    return <Rating readOnly cancel={false} value={genrateRating()} />
+    return <Rating readOnly cancel={false} value={genrateRating()}/>
 }
 
 export const showOperationalStatus = (report) => {

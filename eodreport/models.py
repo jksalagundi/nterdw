@@ -24,5 +24,7 @@ class EndOfDayReport(models.Model):
 
 class EODConfig(models.Model):
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    distribution_list = models.JSONField(null=False, default=dict)
+    active = models.BooleanField(null=False, default=True)
 
 

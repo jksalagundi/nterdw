@@ -182,8 +182,8 @@ LOGGING = {
     },
     'loggers': {
         'nterdw': {
-            # 'handlers': ['console', 'file'],
-            'handlers': ['file'],
+            'handlers': ['console', 'file'],
+            # 'handlers': ['file'],
             'level': 'DEBUG',
         },
     }

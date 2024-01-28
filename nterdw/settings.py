@@ -192,12 +192,12 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'frontend', 'build', 'static'),
                     os.path.join(BASE_DIR, 'eod_prime', 'build', 'static')]
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-# CORS_ALLOWED_ORIGINS = [
-#     'http://localhost:3000',
-#     'http://localhost:8000',
-#     'http://127.0.0.1',
-#     'http://localhost'
-# ]
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    'http://localhost:8000',
+    'http://127.0.0.1',
+    'http://localhost'
+]
 
 EMAIL_PASSWORD = "fiza xvbd mpim fook"
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

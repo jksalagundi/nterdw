@@ -24,14 +24,28 @@ export const postEodData = createAsyncThunk("eod/postEodData",
         axios.defaults.withCredentials = true;
         axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
         axios.defaults.xsrfCookieName = getCookie('csrftoken');
-        // if (formData !== null) {
-            console.log("Existing form info ", formData.get("resend_status"), formData.get("existing_form_id"));
-        // }
+        let url = "http://localhost:8000/eod/api/list";
+        let method = "post";
+        if (formData) {
+            const resend_status = formData.get("resend_status");
+            const existing_form_id = formData.get("existing_form_id");
+            console.log("Resend Status, Existing ID", resend_status, existing_form_id);
+            if (resend_status === "true"){
+                url = `http://localhost:8000/eod/api/${existing_form_id}/`;
+                method = "put";
+            }
+        }
+        console.log("URL Used for posting ... ", url);
         const response = await axios({
-            method: 'post',
-            url: 'http://localhost:8000/eod/api/list',
+            method: method,
+            url: url,
             data: formData,
-            headers: { "Content-Type": "multipart/form-data" },
+            headers: { 
+                "Content-Type": "multipart/form-data" ,
+                "Access-Control-Allow-Origin": "*",
+                'Accept': 'application/json',
+                // 'Content-Type': 'application/json' 
+            },
         });
         return response.data;
 

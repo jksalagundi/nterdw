@@ -14,7 +14,7 @@ class EndOfDayReport(models.Model):
     location_cleaned_status = models.CharField(max_length=30, null=False)
     games_sold = models.IntegerField(verbose_name='Games Sold', default=0)
     walkins_declined = models.IntegerField(verbose_name='Number of Walkins Declined', default=0)
-    cash_in_box = models.IntegerField(verbose_name='Cash In the Box', default=0)
+    cash_in_box = models.DecimalField(verbose_name='Cash In the Box', default=0.0, max_digits=10, decimal_places=2)
     inventory_reorder = models.CharField(max_length=200, default='No Reorder')
     eod_notes = models.TextField(null=False, default='EOD Notes TBD')
     game_status = models.JSONField(null=False, default=dict)

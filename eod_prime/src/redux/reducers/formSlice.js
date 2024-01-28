@@ -41,7 +41,7 @@ const formSlice = createSlice({
             const { resend_status, existing_form_id} = action.payload;
             state.resend_status = resend_status;
             state.existing_form_id = existing_form_id;
-            if (action.payload === false){
+            if (resend_status === false){
                 state.lock_form = true;
             }
         },

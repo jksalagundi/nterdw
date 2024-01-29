@@ -35,7 +35,7 @@ class SendEmails(APIView):
             self.report_date = datetime.strptime(report_date, "%Y-%m-%d")
             if shift[:2].upper() not in (["AM", "PM"]):
                 raise ShiftException(f"Invalid shift data {shift}")
-            self.eod_reports = EndOfDayReport.objects.filter(report_date__date=self.report_date)
+            self.eod_reports = EndOfDayReport.objects.filter(report_date=self.report_date)
             logger.debug(f"Got {self.eod_reports.count()} records with date")
             self.eod_reports = self.eod_reports.filter(location=self.location).filter(shift=shift)
             logger.debug(f"Got {self.eod_reports.count()} records with location & shift")

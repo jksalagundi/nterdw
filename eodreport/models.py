@@ -7,7 +7,8 @@ class EndOfDayReport(models.Model):
     End-of-day Report Class
     """
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
-    report_date = models.DateTimeField(verbose_name='Report Day', auto_now=True)
+    # report_date = models.DateTimeField(verbose_name='Report Day', auto_now=True)
+    report_date = models.DateField(verbose_name='Report Day', auto_now_add=True)
     shift = models.CharField(max_length=2, verbose_name='AM or PM Shift')
     shift_lead = models.CharField(max_length=100, verbose_name='Shift Lead')
     traffic_status = models.CharField(max_length=20, verbose_name='Traffic Status')
@@ -18,13 +19,15 @@ class EndOfDayReport(models.Model):
     inventory_reorder = models.CharField(max_length=200, default='No Reorder')
     eod_notes = models.TextField(null=False, default='EOD Notes TBD')
     game_status = models.JSONField(null=False, default=dict)
-    created_date = models.DateTimeField(auto_now=True)
-    modified_date = models.DateTimeField(null=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    modified_date = models.DateTimeField(auto_now=True, null=True)
+    report_emailed = models.BooleanField(null=False, default=False)
 
 
 class EODConfig(models.Model):
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     distribution_list = models.JSONField(null=False, default=dict)
     active = models.BooleanField(null=False, default=True)
+
 
 

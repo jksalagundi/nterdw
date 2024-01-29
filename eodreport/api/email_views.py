@@ -74,7 +74,10 @@ class SendEmails(APIView):
         date_format = "%A, %d-%b-%Y"
         if self.config is not None and self.eod_reports.count() > 0:
             for report in self.eod_reports:
-                subject = (f"Shift End Report:: {self.location.location_name.upper()}/ "
+                if report.report_emailed:
+                    logger.warning(f"{report.id} was already sent. Request got again")
+                    continue
+                subject = (f"Shift End Report:: {self.location.description}/ "
                            f"{datetime.strftime(self.report_date, date_format)}/{report.shift} Shift")
                 games = []
                 if report.game_status is not None:
@@ -98,15 +101,21 @@ class SendEmails(APIView):
                 except Exception as ex:
                     logger.error(f" Failed to load template file... {str(ex)}")
                     raise
-                # logger.info(html_body)
-                message = EmailMultiAlternatives(
-                    subject=subject,
-                    body='Test email',
-                    from_email='jksalagundi@gmail.com',
-                    to=['jayantha@ntxescape.com']
-                )
-                message.attach_alternative(html_body, "text/html")
-                message.send(fail_silently=False)
+                try:
+                    distribution_list = self.config.distribution_list if self.config.active else ["jayantha@ntxescape.com"]
+                    message = EmailMultiAlternatives(
+                        subject=subject,
+                        body=strip_tags(html_body),
+                        from_email='jksalagundi@gmail.com',
+                        to=distribution_list
+                    )
+                    message.attach_alternative(html_body, "text/html")
+                    message.send(fail_silently=False)
+                    report.report_emailed = True
+                    report.save()
+                except Exception as ex:
+                    logger.error(f" Failed to email shift end reports due to an exception : {str(ex)}")
+                    raise
 
     @staticmethod
     def get_game(game_id):

@@ -30,7 +30,7 @@ export const postEodData = createAsyncThunk("eod/postEodData",
             const resend_status = formData.get("resend_status");
             const existing_form_id = formData.get("existing_form_id");
             console.log("Resend Status, Existing ID", resend_status, existing_form_id);
-            if (resend_status === "true"){
+            if (resend_status === "true") {
                 url = `http://localhost:8000/eod/api/${existing_form_id}/`;
                 method = "put";
             }
@@ -40,8 +40,8 @@ export const postEodData = createAsyncThunk("eod/postEodData",
             method: method,
             url: url,
             data: formData,
-            headers: { 
-                "Content-Type": "multipart/form-data" ,
+            headers: {
+                "Content-Type": "multipart/form-data",
                 "Access-Control-Allow-Origin": "*",
                 'Accept': 'application/json',
                 // 'Content-Type': 'application/json' 
@@ -51,7 +51,23 @@ export const postEodData = createAsyncThunk("eod/postEodData",
 
     });
 
-
+export const sendEmail = createAsyncThunk("eod/sendEmail", async (data) => {
+    axios.defaults.withCredentials = true;
+    axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+    axios.defaults.xsrfCookieName = getCookie('csrftoken');
+    let url = `http://localhost:8000/eod/api/emails/${data.location}/${data.report_date}/${data.shift}/`;
+    const response = await axios({
+        method: 'get',
+        url: url,
+        headers: {
+            // "Content-Type": "multipart/form-data",
+            "Access-Control-Allow-Origin": "*",
+            'Accept': 'application/json',
+            'Content-Type': 'application/json' 
+        },
+    });
+    return response.data;
+});
 
 const eodSlice = createSlice({
     name: 'eod',
@@ -78,6 +94,14 @@ const eodSlice = createSlice({
                 state.error = action.error;
                 state.status = "Failed";
                 console.log("Form Posting failed", action.payload);
+            }).addCase(sendEmail.pending, (state, action) => {
+                state.status = "Email Pending"
+            }).addCase(sendEmail.fulfilled, (state, action) => {
+                state.status = "Email Sent"
+                console.log("Sent ... ", action.payload);
+            }).addCase(sendEmail.rejected, (state, action) => {
+                state.status = "Failed to send emails"
+                state.error = action.error;
             })
     }
 });

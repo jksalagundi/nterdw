@@ -4,7 +4,9 @@ from rest_framework import status
 from eodreport.models import EODConfig, EndOfDayReport
 from masters.models import Location, Games
 from datetime import datetime
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMultiAlternatives
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
 import logging
 
 logger = logging.getLogger("nterdw")
@@ -18,7 +20,6 @@ class SendEmails(APIView):
     """
     View to send emails to configured distribution list
     """
-
     def __init__(self):
         self.eod_reports = None
         self.config = None
@@ -75,31 +76,37 @@ class SendEmails(APIView):
             for report in self.eod_reports:
                 subject = (f"Shift End Report:: {self.location.location_name.upper()}/ "
                            f"{datetime.strftime(self.report_date, date_format)}/{report.shift} Shift")
-                message = f"\n{'-' * 130}\n"
-                message += f"\tReport filed by : {report.shift_lead}\n"
-                message += f"{'-' * 130}\n"
-                message += f"\tTraffic Status: {report.traffic_status}\n"
-                message += f"\tLocation Cleaned: {report.location_cleaned_status}\n"
-                message += f"\tGames Sold: {report.games_sold}\n"
-                message += f"\tCustomer Walk-ins Declined: {report.walkins_declined}\n"
-                message += f"\tInventory Re-ordered: {report.inventory_reorder}\n"
-                message += f"\tCash at Location: ${report.cash_in_box}\n"
-                message += f"{'-' * 130}\n"
-                message += f"\tShift Lead Notes: {report.eod_notes[:100]}\n"
-                message += f"{'-' * 130}\n"
+                games = []
                 if report.game_status is not None:
-                    for status in report.game_status:
-                        message += (f"\t\t{SendEmails.get_game(status['game_id'])}: "
-                                    f"{status['status']} - {status['details']}\n")
-                message += f"{'-' * 130}\n"
-
-                logger.debug(subject)
-                logger.debug(message)
-                # Now sending email...
-                send_mail(subject=subject,
-                          message=message,
-                          from_email="jayantha@gmail.com",
-                          recipient_list=["jayantha@ntxescape.com"])
+                    for game_stat in report.game_status:
+                        games.append({
+                            "name": SendEmails.get_game(game_stat['game_id']),
+                            "status": game_stat['status'],
+                            "details": game_stat['details'] if game_stat['details'] is not None else ''
+                        })
+                logger.debug(games)
+                try:
+                    html_body = render_to_string('eodreport/eod_report.html', context={
+                        'report': report,
+                        'subject': subject,
+                        'message': games,
+                        'eod_notes': strip_tags(report.eod_notes),
+                        'report_date': datetime.strftime(report.report_date, date_format),
+                        'location_name': self.location.description,
+                        'game_status': games,
+                    })
+                except Exception as ex:
+                    logger.error(f" Failed to load template file... {str(ex)}")
+                    raise
+                # logger.info(html_body)
+                message = EmailMultiAlternatives(
+                    subject=subject,
+                    body='Test email',
+                    from_email='jksalagundi@gmail.com',
+                    to=['jayantha@ntxescape.com']
+                )
+                message.attach_alternative(html_body, "text/html")
+                message.send(fail_silently=False)
 
     @staticmethod
     def get_game(game_id):

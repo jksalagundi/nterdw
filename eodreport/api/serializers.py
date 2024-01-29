@@ -1,4 +1,4 @@
-from eodreport.models import EndOfDayReport, Games
+from eodreport.models import EndOfDayReport, Games, EODConfig
 from rest_framework.serializers import ModelSerializer
 
 
@@ -31,6 +31,18 @@ class EndOfDayReportSerializer(ModelSerializer):
         instance.game_status = validated_data.get('game_status', instance.game_status)
         instance.save()
         return instance
+
+
+class EODConfigSerializer(ModelSerializer):
+    class Meta:
+        model = EODConfig
+        fields = ['location', 'distribution_list', 'active']
+
+    def create(self, validated_date):
+        return EODConfig.objects.create(**validated_date)
+
+    def update(self, instance, validated_data):
+        pass
 
 
 

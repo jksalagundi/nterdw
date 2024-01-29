@@ -5,11 +5,14 @@ import { Button } from "primereact/button";
 import { useSelector } from "react-redux";
 import { ShowReport } from "./components/ShowReport";
 import { showTrafficStatus, showCleanlinessStatus, showOperationalStatus } from "./components/StatusComponents";
+import { sendEmail } from "../redux/reducers/eodSlice";
+import { useDispatch } from "react-redux";
 import _ from "lodash";
 
 export const ArchiveListPanel = () => {
     const eod_reports = useSelector(state => state.eod.eod_reports);
     const locations = useSelector(state => state.masters.locations);
+    const dispatch = useDispatch();
 
     const showReportDate = (report) => {
         return report.report_date.substring(0, 10)
@@ -31,13 +34,26 @@ export const ArchiveListPanel = () => {
                     setCurrentReport(report);
                  }} />)
     }
+
+    const sendEmailButton = (report) => {
+        let data = {
+            location: report.location,
+            report_date: report.report_date.substring(0,10),
+            shift: report.shift
+        };
+        return (
+            <Button icon="pi pi-telegram"
+                onClick={() => {
+                    dispatch(sendEmail(data));
+                 }} />) 
+    }
     return (
         <div className="card flex m-3 p-3 justify-content-center">
             <DataTable value={eod_reports}
                 size="small"
                 showGridlines stripedRows
                 scrollable
-                scrollHeight={`${window.innerHeight - 500}px`}
+                scrollHeight={`${window.innerHeight - 200}px`}
                 tableStyle={{ minWidth: '50rem' }}>
                 <Column field="report_date"
                     body={showReportDate}
@@ -49,7 +65,8 @@ export const ArchiveListPanel = () => {
                 <Column header="Traffic" body={showTrafficStatus}></Column>
                 <Column header="Cleanliness" body={showCleanlinessStatus}></Column>
                 <Column header="Operational" body={showOperationalStatus}></Column>
-                <Column header="Show Report" body={showButton}></Column>
+                <Column header="Show" body={showButton}></Column>
+                <Column header="Email" body={sendEmailButton}></Column>
             </DataTable>
             <ShowReport active={dialogVisible} setActive={setDialogVisible} report={currentReport}/>
         </div>

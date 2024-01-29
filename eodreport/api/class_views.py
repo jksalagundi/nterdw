@@ -1,4 +1,4 @@
-from .serializers import EndOfDayReportSerializer, EndOfDayReport
+from .serializers import EndOfDayReportSerializer, EndOfDayReport, EODConfig, EODConfigSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -65,3 +65,27 @@ class EndOfDayReportDetail(APIView):
         except EndOfDayReport.DoesNotExist:
             return Response(status=status.HTTP_400_BAD_REQUEST,
                             data={'message': f"Could not fetch EOD Report with Primary Key of {pk}"})
+
+
+class EODConfigClassAV(APIView):
+    def get(self, request, format=None):
+        config_list = EODConfig.objects.all()
+        serializer = EODConfigSerializer(config_list, many=True)
+        return Response(status=status.HTTP_200_OK, data=serializer.data)
+
+    def post(self, request, format=None):
+        try:
+            serializer = EODConfigSerializer(data = request.data)
+            if serializer.is_valid():
+                serializer.save()
+                config_list = EODConfig.objects.all()
+                serializer = EODConfigSerializer(config_list, many=True)
+                return Response(status=status.HTTP_207_MULTI_STATUS, data=serializer.data)
+            else:
+                print("Failed as there are errors in serialization", serializer.errors)
+                return Response(status=status.HTTP_400_BAD_REQUEST, data=serializer.errors)
+        except Exception as ex:
+            print(f"Exception occurred while parsing {str(ex)}")
+            return Response(status=status.HTTP_400_BAD_REQUEST,
+                            data={'error': str(ex),
+                                  'message': 'Exception occurred while parsing JSON Data'})

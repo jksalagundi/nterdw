@@ -32,17 +32,16 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
     'orders.apps.OrdersConfig',
     'core.apps.CoreConfig',
     'eodreport',
-    # 'masters.apps.MastersConfig',
     'masters',
     'rest_framework',
 ]
@@ -196,7 +195,9 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:8000',
     'http://127.0.0.1',
-    'http://localhost'
+    'http://127.0.0.1:8000',
+    'http://localhost',
+    'http://localhost:8000'
 ]
 
 EMAIL_PASSWORD = "fiza xvbd mpim fook"

@@ -42,8 +42,8 @@ export const postEodData = createAsyncThunk("eod/postEodData",
             data: formData,
             headers: {
                 "Content-Type": "multipart/form-data",
-                "Access-Control-Allow-Origin": "*",
-                'Accept': 'application/json',
+                // "Access-Control-Allow-Origin": "*",
+                // 'Accept': 'application/json',
                 // 'Content-Type': 'application/json' 
             },
         });

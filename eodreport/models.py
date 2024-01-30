@@ -23,6 +23,13 @@ class EndOfDayReport(models.Model):
     modified_date = models.DateTimeField(auto_now=True, null=True)
     report_emailed = models.BooleanField(null=False, default=False)
 
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["report_date", "shift", "location"],
+                name="report_date_shift_location_is_unique"
+            )
+        ]
 
 class EODConfig(models.Model):
     location = models.ForeignKey(Location, on_delete=models.CASCADE)

@@ -2,6 +2,8 @@ from .serializers import EndOfDayReportSerializer, EndOfDayReport, EODConfig, EO
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+import logging
+logger = logging.getLogger("nterdw")
 
 
 class EndOfDayReportList(APIView):
@@ -12,6 +14,8 @@ class EndOfDayReportList(APIView):
 
     def post(self, request, format=None):
         try:
+            # print("Coming to post")
+            logger.debug("Creating a new record")
             serializer = EndOfDayReportSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
@@ -19,10 +23,11 @@ class EndOfDayReportList(APIView):
                 serializer = EndOfDayReportSerializer(eod_list, many=True)
                 return Response(status=status.HTTP_207_MULTI_STATUS, data=serializer.data)
             else:
-                print("Failed as there are errors in serialization", serializer.errors)
+                logger.error("Failed due to serialization errors %s", serializer.errors)
+                # print("Failed as there are errors in serialization", serializer.errors)
                 return Response(status=status.HTTP_400_BAD_REQUEST, data=serializer.errors)
         except Exception as ex:
-            print(f"Exception occurred while parsing {str(ex)}")
+            logger.error(f"Failed to create a record @ EOD Reprot due to error : {str(ex)}")
             return Response(status=status.HTTP_400_BAD_REQUEST,
                             data={'error': str(ex),
                                   'message': 'Exception occurred while parsing JSON Data'})

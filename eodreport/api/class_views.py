@@ -53,6 +53,7 @@ class EndOfDayReportDetail(APIView):
     def put(self, request, pk, format=None):
         try:
             eod_report = self.get_object(pk)
+            eod_report.report_emailed = False
             serializer = EndOfDayReportSerializer(eod_report, data=request.data)
             if serializer.is_valid():
                 serializer.save()

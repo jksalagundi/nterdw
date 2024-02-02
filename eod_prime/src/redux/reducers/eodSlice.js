@@ -7,10 +7,10 @@ const initialState = {
     error: null,
     eod_reports: []
 }
-const URL = "http://localhost:8000";
+// const URL = "http://localhost:8000";
 
 export const fetchEodData = createAsyncThunk("eod/fetchEodData", async () => {
-    const response = await axios.get(`${URL}/eod/api/list?format=json`, {
+    const response = await axios.get('/eod/api/list?format=json', {
         header: {
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin": "*"
@@ -21,30 +21,29 @@ export const fetchEodData = createAsyncThunk("eod/fetchEodData", async () => {
 
 export const postEodData = createAsyncThunk("eod/postEodData",
     async (formData) => {
-        axios.defaults.withCredentials = true;
-        axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
-        axios.defaults.xsrfCookieName = getCookie('csrftoken');
-        let url = "http://localhost:8000/eod/api/list";
+        // axios.defaults.withCredentials = true;
+        // axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+        // axios.defaults.xsrfCookieName = getCookie('csrftoken');
+        let url = "/eod/api/list";
         let method = "post";
         if (formData) {
             const resend_status = formData.get("resend_status");
             const existing_form_id = formData.get("existing_form_id");
             console.log("Resend Status, Existing ID", resend_status, existing_form_id);
             if (resend_status === "true") {
-                url = `http://localhost:8000/eod/api/${existing_form_id}/`;
+                url = `/eod/api/${existing_form_id}/`;
                 method = "put";
             }
         }
-        console.log("URL Used for posting ... ", url);
+        console.log("URL Used for posting and csrf token", url, getCookie('csrftoken'));
         const response = await axios({
             method: method,
+            mode: 'same-origin',
             url: url,
             data: formData,
             headers: {
                 "Content-Type": "multipart/form-data",
-                // "Access-Control-Allow-Origin": "*",
-                // 'Accept': 'application/json',
-                // 'Content-Type': 'application/json' 
+                'X-CSRFToken': getCookie('csrftoken'),
             },
         });
         return response.data;
@@ -55,7 +54,7 @@ export const sendEmail = createAsyncThunk("eod/sendEmail", async (data) => {
     axios.defaults.withCredentials = true;
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
     axios.defaults.xsrfCookieName = getCookie('csrftoken');
-    let url = `http://localhost:8000/eod/api/emails/${data.location}/${data.report_date}/${data.shift}/`;
+    let url = `/eod/api/emails/${data.location}/${data.report_date}/${data.shift}/`;
     const response = await axios({
         method: 'get',
         url: url,

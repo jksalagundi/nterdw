@@ -8,15 +8,15 @@ const initialState = {
     error: "",
 }
 
-const URL = "http://localhost:8000";
+// const URL = "http://localhost:8000";
 export const fetchMasters = createAsyncThunk('masters/fetchMasters', async () => {
-    const response = await axios.get(`${URL}/masters/api/locations?format=json`, {
+    const response = await axios.get(`/masters/api/locations?format=json`, {
         header: {
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin": "*"
         },
     });
-    const response2 = await axios.get(`${URL}/masters/api/games?format=json`, {
+    const response2 = await axios.get(`/masters/api/games?format=json`, {
         header: {
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin": "*"
